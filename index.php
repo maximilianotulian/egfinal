@@ -1,3 +1,3 @@
 <?php
-  echo 'Index!';
+  echo 'Index! Prueba';
  ?>
