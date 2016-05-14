@@ -1,5 +1,17 @@
+<<<<<<< Updated upstream
 body{
   h1{
     font-size: 20px; 
   }
 }
+=======
+@import "normalize.scss";
+@import "globals.scss";
+@import "component/banner.scss";
+@import "component/header.scss";
+@import "component/footer.scss";
+@import "pages/contact.scss";
+@import "pages/home.scss";
+@import "pages/news.scss";
+@import "pages/us.scss";
+>>>>>>> Stashed changes
