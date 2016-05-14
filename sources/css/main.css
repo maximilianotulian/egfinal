@@ -15,7 +15,8 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  margin: 0; }
+  margin: 0;
+  line-height: 1.5; }
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -419,8 +420,124 @@ html {
       list-style-type: none; }
 
 .notice {
+  background-color: #f5f5f5;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   height: 355px;
-  width: 31.1%; }
+  margin: 0.5rem 0 1rem 0;
+  position: relative;
+  transition: box-shadow .25s; }
+  .notice--wrapper {
+    background: white;
+    display: block;
+    line-height: 0;
+    max-height: 270px;
+    overflow: hidden; }
+  .notice--image {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    transition: all 0.3s ease-out;
+    width: 100%; }
+    .notice--image:hover {
+      outline: 0;
+      transform: scale(1.05); }
+  .notice--header {
+    display: table;
+    width: 100%;
+    position: relative; }
+    .notice--header-title {
+      padding: 0 35px 0;
+      border: 0; }
+  .notice--description {
+    background: white;
+    border-top: 1px solid #DFDFDF;
+    bottom: 0;
+    color: #979797;
+    display: block;
+    min-height: 83px;
+    left: 0;
+    padding: 21px 25px 19px 160px;
+    position: absolute;
+    right: 0; }
+    .notice--description-button {
+      background: #ec407a;
+      background-clip: padding-box;
+      box-shadow: rgba(0, 0, 0, 0.4) 0 2px 5px;
+      border-radius: 50%;
+      color: white;
+      display: block;
+      font-family: 'Material Design Iconic Font';
+      font-size: 20px;
+      font-size: 2rem;
+      height: 50px;
+      padding: 16px 0;
+      position: absolute;
+      line-height: 1;
+      right: 25px;
+      transition-duration: 0.3s;
+      text-align: center;
+      top: -26px;
+      width: 50px; }
+      .notice--description-button:hover {
+        color: white;
+        box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22);
+        outline: 0;
+        transition: all 0.2s ease-out; }
+  .notice .description-button-text {
+    font-size: 16px;
+    position: absolute;
+    left: 20px; }
+  .notice .author-wrapper {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    width: 140px;
+    height: 30px; }
+    .notice .author-wrapper--image {
+      color: #444;
+      font-weight: bold;
+      line-height: 2.1;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      vertical-align: middle; }
+      .notice .author-wrapper--image-avatar {
+        background-clip: padding-box;
+        border: 0;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin: -10px 10px -10px 0;
+        max-width: 100%; }
+    .notice .author-wrapper--text {
+      color: #212121;
+      height: 21px;
+      line-height: 1.5;
+      overflow: hidden;
+      vertical-align: middle;
+      width: 101px; }
+      .notice .author-wrapper--text:hover {
+        color: #1b39a8; }
+  .notice .post-on-wrapper {
+    position: absolute;
+    top: 16px;
+    left: 170px;
+    width: 140px;
+    height: 30px; }
+    .notice .post-on-wrapper--text {
+      color: #212121;
+      height: 21px;
+      line-height: 1.5;
+      overflow: hidden;
+      vertical-align: middle;
+      width: 101px; }
+      .notice .post-on-wrapper--text:hover {
+        color: #1b39a8; }
+  .notice_with-paragraph {
+    margin: 0;
+    color: inherit; }
 
 .icon {
   font-size: 3.56rem; }

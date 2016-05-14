@@ -23,28 +23,92 @@
         <div class="row">
 
             <div class="col s12 m4">
-                <div class="card">
-
-                    <div class="card-image">
+                <div class="notice">
+                    <div class="notice--wrapper">
                         <img class="notice--image" src="http://materialdesignblog.com/wp-content/uploads/2015/09/Gallery_Dribble_1-403x179.jpg" alt="notice 1">
                     </div>
 
-                    <div class="card-content grey lighten-3">
-                        <p class="">
-                            Introduction here
-                        </p>
+                    <div class="notice--header">
+                        <h1 class="notice--header-title">Notice Title</h1>
                     </div>
 
-                    <div class="card-action">
+                    <div class="notice--description">
 
-                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+                        <a class="notice--description-button">
+                            <span class="description-button-text">></span>
+                        </a>
 
-                        <div class="chip">
-                            <img src="http://0.gravatar.com/avatar/0eae3b79fc7792e26ca50d66dd76bfdc?s=50&d=monsterid&r=g" alt="Contact Person">
-                            Dario Diaz
-                        </div>
+                        <span class="author-wrapper">
+                            <a class"author-wrapper--image">
+                                <img class="author-wrapper--image-avatar" src="http://0.gravatar.com/avatar/0eae3b79fc7792e26ca50d66dd76bfdc?s=50&d=monsterid&r=g" />
+                            </a>
+                            <a class="author-wrapper--text">Dario Diaz</a>
+                        </span>
+
+                        <span class="post-on-wrapper">
+                            <a class="post-on-wrapper--text">La capital 25/03/2016</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="notice">
+                    <div class="notice--wrapper">
+                        <img class="notice--image" src="http://materialdesignblog.com/wp-content/uploads/2015/05/mobile-day-403x179.png" alt="notice 1">
                     </div>
 
+                    <div class="notice--header">
+                        <h1 class="notice--header-title">Notice Title</h1>
+                    </div>
+
+                    <div class="notice--description">
+
+                        <a class="notice--description-button">
+                            <span class="description-button-text">></span>
+                        </a>
+
+                        <span class="author-wrapper">
+                            <a class"author-wrapper--image">
+                                <img class="author-wrapper--image-avatar" src="http://materialdesignblog.com/wp-content/uploads/2015/05/profile1-50x50.png" />
+                            </a>
+                            <a class="author-wrapper--text">Esteban Kito</a>
+                        </span>
+
+                        <span class="post-on-wrapper">
+                            <a class="post-on-wrapper--text">La capital 25/03/2016</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="notice">
+                    <div class="notice--wrapper">
+                        <img class="notice--image" src="http://materialdesignblog.com/wp-content/uploads/2015/06/00-cover-2-403x179.png" alt="notice 1">
+                    </div>
+
+                    <div class="notice--header">
+                        <h1 class="notice--header-title">Notice Title</h1>
+                    </div>
+
+                    <div class="notice--description">
+
+                        <a class="notice--description-button">
+                            <span class="description-button-text">></span>
+                        </a>
+
+                        <span class="author-wrapper">
+                            <a class"author-wrapper--image">
+                                <img class="author-wrapper--image-avatar" src="http://materialdesignblog.com/wp-content/uploads/2015/09/MDB_avatar_1441878429-50x50.jpg" />
+                            </a>
+                            <a class="author-wrapper--text">Roberto Lamas</a>
+                        </span>
+
+                        <span class="post-on-wrapper">
+                            <a class="post-on-wrapper--text">La capital 25/03/2016</a>
+                        </span>
+                    </div>
                 </div>
             </div>
 
