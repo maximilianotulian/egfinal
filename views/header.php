@@ -17,9 +17,11 @@
     <div class="header--nav-wrapper container">
       <a href="#" class="header--nav-logo">Logo</a>
       <ul class="header--nav-list">
+        <li><a href="/home">Inicio</a></li>
         <li><a href="/news">Noticias</a></li>
         <li><a href="/us">Sobre Nosotros</a></li>
-        <li><a href="/conctact">Contacto</a></li>
+        <li><a href="/contact">Contacto</a></li>
+        <li><a href="/account">Registro</a></li>
       </ul>
     </div>
   </nav>

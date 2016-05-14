@@ -400,7 +400,7 @@ html {
   text-align: center; }
 
 .header {
-  background-color: white; }
+  background: rgba(255, 255, 255, 0.9); }
   .header--nav-wrapper {
     height: 100%;
     position: relative;
