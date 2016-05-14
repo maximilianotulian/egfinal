@@ -75,6 +75,7 @@
             if ($foundUser){
                 $foundUser = $foundUser[0];
                 if (password_verify($user['password'], $foundUser['password'])) {
+                    $foundUser['permissions'] = $userRepository->getUserRoles($foundUser['id']);
                     self::storeUserInSession($foundUser);
                     if($rememberUser){
                         self::rememberUser($foundUser);
@@ -166,6 +167,19 @@
                 setcookie('user', '', time() - 3600, '/');
             }
         }
+
+        public static function loggedUserHasPermission($permission){
+            $loggedUserPermissions = self::getLoggedUser()['permissions'];
+            $result = false;
+            foreach ($loggedUserPermissions as $key => $userPermission) {
+                if($userPermission['description'] == $permission){
+                    $result = true;
+                    break;
+                }
+            }
+            return $result;
+        }
+
     }
 
  ?>

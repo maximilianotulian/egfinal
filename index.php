@@ -1,14 +1,21 @@
+<link rel="stylesheet" href="sources/lib/materialize/css/materialize.min.css" media="screen" title="no title" charset="utf-8">
+
 <?php
 
     include_once 'system/utils/UserHelper.php';
-
+    include_once 'views/login/login.modal.php';
+    include_once 'system/utils/Permissions.php';
     Use \App\System\Helpers\UserHelper as UserHelper;
+    Use \App\System\Helpers\Permissions as Permissions;
+
+    $loggedUser = UserHelper::getLoggedUser();
 
 ?>
 
 
-<?php if(UserHelper::getLoggedUser()){
-    echo 'Welcome ' . UserHelper::getLoggedUser()['username'];
+<?php if($loggedUser){
+    echo 'Welcome ' . $loggedUser['username'];
+    var_dump(UserHelper::loggedUserHasPermission(Permissions::ADMIN_ACCESS));
     if ( isset($_COOKIE['user']) ){
         echo '<br />cookie saved <br />';
     }else{
@@ -20,6 +27,13 @@
         </form>
     <?php
     } else{
-        echo '<a href="login.php">login</a><br/><a href="registro.php">register</a>';
+        ?>
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal-login">Login</a>
+        <?php
     }
 ?>
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="sources/lib/materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="sources/js/app.js"></script>
