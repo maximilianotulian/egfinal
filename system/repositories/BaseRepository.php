@@ -109,7 +109,7 @@
             return $stmt;
         }
 
-        private function executePrepareStatement($query_string, $element = null, $noResults = false){
+        protected function executePrepareStatement($query_string, $element = null, $noResults = false){
             $dbManager = new DbManager();
             $connection = $dbManager->getConnection();
             $return = null;
