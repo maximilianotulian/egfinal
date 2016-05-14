@@ -418,11 +418,15 @@ html {
       padding: 0;
       list-style-type: none; }
 
+.notice {
+  height: 355px;
+  width: 31.1%; }
+
 .icon {
   font-size: 3.56rem; }
 
 .home--icon {
   padding: 0 15px; }
 
-.news--card {
-  width: 30%; }
+.news--notices {
+  width: 90%; }
