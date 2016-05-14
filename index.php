@@ -1,5 +1,5 @@
 <?php
-
+    include 'views/header.php';
     $pagina = $_GET['pagina'];
     $archivo = 'views/'.$pagina.'.php';
 
@@ -9,14 +9,5 @@
         include 'views/home.php';
     }
 
+    include 'views/footer.php';
  ?>
-
-<div class="" style="height:500px;">
-asd
-</div>
-<div class="" style="background-image:url(trees-background.jpg); height:500px;background-attachment:fixed">
-
-</div>
-<div class="" style="height:500px;">
-asd
-</div>
