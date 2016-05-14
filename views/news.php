@@ -49,6 +49,12 @@
                             <a class="post-on-wrapper--text">La capital 25/03/2016</a>
                         </span>
                     </div>
+                    <div class="notice--text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -79,6 +85,12 @@
                             <a class="post-on-wrapper--text">La capital 25/03/2016</a>
                         </span>
                     </div>
+                    <div class="notice--text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -108,6 +120,12 @@
                         <span class="post-on-wrapper">
                             <a class="post-on-wrapper--text">La capital 25/03/2016</a>
                         </span>
+                    </div>
+                    <div class="notice--text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam.
+                        </p>
                     </div>
                 </div>
             </div>
