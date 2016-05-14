@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="home home--baner banner-container">
 
     <?php $backgroundName="background1"; ?>

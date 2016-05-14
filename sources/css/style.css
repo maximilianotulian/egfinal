@@ -19,18 +19,30 @@ p {
   color: #26a69a;
 }
 
+<<<<<<< HEAD
 .portal-container {
+=======
+.parallax-container {
+>>>>>>> ejemplos
   min-height: 380px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
 }
+<<<<<<< HEAD
   .portal-container .section {
+=======
+  .parallax-container .section {
+>>>>>>> ejemplos
     width: 100%;
   }
 
 @media only screen and (max-width : 992px) {
+<<<<<<< HEAD
   .portal-container .section {
+=======
+  .parallax-container .section {
+>>>>>>> ejemplos
     position: absolute;
     top: 40%;
   }
@@ -54,4 +66,8 @@ p {
 
 footer.page-footer {
   margin: 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ejemplos
