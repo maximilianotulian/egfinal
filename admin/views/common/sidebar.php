@@ -20,7 +20,9 @@
 
     <?php } ?>
     <?php if (UserHelper::loggedUserHasPermission(Permissions::EDIT_USERS)){ ?>
-        <a href="/admin/users">usuarios</a>
+        <ul class="options--list">
+            <li><a class="options--list-item" href="/admin/users">Editar usuarios</a></li>
+        </ul>
     <?php } ?>
     </div>
 </div>
