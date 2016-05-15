@@ -16,7 +16,7 @@
         public static function createUser($user){
 
             $errors = array();
-            $userCreated = false;
+            $userCreated = null;
 
             if( self::checkUsername($user['username']) ) {
                 $errors[] = Flags::USERNAME_ALREADY_USED;
@@ -75,7 +75,7 @@
             if ($foundUser){
                 $foundUser = $foundUser[0];
                 if (password_verify($user['password'], $foundUser['password'])) {
-                    $foundUser['permissions'] = $userRepository->getUserRoles($foundUser['id']);
+                    $foundUser['permissions'] = $userRepository->getUserPermissions($foundUser['id']);
                     self::storeUserInSession($foundUser);
                     if($rememberUser){
                         self::rememberUser($foundUser);
@@ -178,6 +178,11 @@
                 }
             }
             return $result;
+        }
+
+        public static function setUserRole($userId, $roleId = 3){
+            $userRepository = new UserRepository();
+            $userRepository->setUserRole($userId, $roleId);
         }
 
     }
