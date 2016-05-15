@@ -1,0 +1,23 @@
+{
+  "name": "Portal",
+  "description": "Tp final para Entornos Graficos",
+  "main": "index.js",
+  "authors": [
+    "Joaquin Diaz",
+    "Cristian Ruiz",
+    "Maximiliano Tulian"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/maximilianotulian/egfinal",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}
