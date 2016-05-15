@@ -4,6 +4,11 @@
 
     Use \App\System\Helpers\UserHelper as UserHelper;
 
+    if ( !isset($_POST['username']) && !isset($_POST['password']) ){
+        header('Location: /account/bad_login');
+        die();
+    }
+    
     $user = array(
         'username' => $_POST['username'],
         'password' => $_POST['password']

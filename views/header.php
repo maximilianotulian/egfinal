@@ -34,11 +34,11 @@
         <li><a href="/contact">Contacto</a></li>
         <?php if($loggedUser) {?>
             <li>
-                <a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="user-dropdown"><?php echo $loggedUser['username'] ?><i class="material-icons right">arrow_drop_down</i></a>
+                <a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="user-dropdown"><?php echo $loggedUser['name'] ?><i class="material-icons right">arrow_drop_down</i></a>
                 <ul id="user-dropdown" class="dropdown-content">
                   <li><a href="/perfil">Mi Perfil</a></li>
                   <?php if (UserHelper::loggedUserHasPermission(Permissions::ADMIN_ACCESS)) { ?>
-                      <li><a href="/admin">Administración</a></li>
+                      <li><a href="/admin/">Administración</a></li>
                   <?php } ?>
                   <li class="divider"></li>
                   <li><a href="/logout">Salir</a></li>
