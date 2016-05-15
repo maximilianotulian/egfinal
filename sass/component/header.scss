@@ -1,0 +1,28 @@
+.header {
+    background: rgba(255,255,255,0.9); 
+
+    &--nav-wrapper {
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    &--nav-logo {
+        color: black;
+        display: inline-block;
+        font-size: 2.1rem;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+    }
+
+    &--nav-list {
+        float: right;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+    }
+}
