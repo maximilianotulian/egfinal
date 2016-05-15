@@ -571,5 +571,20 @@ html {
 .news--notices {
   width: 90%; }
 
-.admin {
-  background-color: #3e2723; }
+.admin--nav {
+  background-color: #263238; }
+  .admin--nav-text {
+    color: white; }
+
+.admin--sidebar {
+  color: white;
+  width: 100%; }
+  .admin--sidebar-header {
+    background-color: #263238;
+    height: 100px; }
+  .admin--sidebar-options {
+    padding: 0 !important;
+    margin: 0;
+    background-color: #37474f; }
+  .admin--sidebar-text {
+    color: grey; }

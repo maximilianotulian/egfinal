@@ -16,8 +16,8 @@
 
 ?>
 
-<div class="row">
-    <div class="col s2">
+<div class="admin row">
+    <div class="col s2 no-padding">
         <?php include $_SERVER["DOCUMENT_ROOT"].'/admin/views/common/sidebar.php'; ?>
     </div>
     <div class="col s10">
