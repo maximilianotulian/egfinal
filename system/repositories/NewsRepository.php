@@ -38,6 +38,12 @@
             return $news;
         }
 
+        function getById($id){
+            $new = parent::getById($id);
+            $new[0] = $this->setAuthor($new[0]);
+            return $new;
+        }
+
     }
 
  ?>

@@ -163,9 +163,15 @@
     &--title {
         font-size: 30px;
     }
+    &--author{
+        font-size: 20px;
+    }
 
     &--description {
         text-align: justify;
+        p{
+            white-space: pre-line;
+        }
     }
 
     &--image {

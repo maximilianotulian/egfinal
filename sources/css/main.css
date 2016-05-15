@@ -556,8 +556,12 @@ html {
   transition: box-shadow .25s; }
   .notice-complete--title {
     font-size: 30px; }
+  .notice-complete--author {
+    font-size: 20px; }
   .notice-complete--description {
     text-align: justify; }
+    .notice-complete--description p {
+      white-space: pre-line; }
   .notice-complete--image {
     height: 300px;
     width: 250px; }
