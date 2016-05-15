@@ -9,6 +9,11 @@
             return date(self::MYSQL_DATE_FORMAT);
         }
 
+        public static function formatDateES($date){
+            setlocale(LC_ALL,"es_ES");
+            return date('d/m/Y',strtotime($date));
+        }
+
     }
 
  ?>

@@ -30,7 +30,6 @@
             'subtitle' => $_POST['subtitle'],
             'intro_text' => $_POST['intro_text'],
             'full_text' => $_POST['full_text'],
-            'author' => $loggedUser['username'],
             'id_user' => $loggedUser['id']
         );
         if(isset($_FILES['image'])){

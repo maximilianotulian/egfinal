@@ -434,7 +434,6 @@ html {
   background-color: #f5f5f5;
   border-radius: 2px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  height: 430px;
   margin: 0.5rem 0 1rem 0;
   position: relative;
   transition: box-shadow .25s; }
@@ -442,7 +441,7 @@ html {
     background: white;
     display: block;
     line-height: 0;
-    max-height: 270px;
+    max-height: 185px;
     overflow: hidden; }
   .notice--image {
     border: 0;
@@ -469,8 +468,8 @@ html {
     font-size: 14px;
     min-height: 55px;
     left: 0;
-    padding: 21px 25px 19px 160px;
-    position: absolute;
+    padding: 15px 10px;
+    position: relative;
     right: 0; }
     .notice--description-button {
       background: #ec407a;
@@ -501,10 +500,6 @@ html {
     position: absolute;
     left: 20px; }
   .notice .author-wrapper {
-    position: absolute;
-    top: 16px;
-    left: 20px;
-    width: 140px;
     height: 30px; }
     .notice .author-wrapper--image {
       color: #444;
@@ -533,11 +528,8 @@ html {
       .notice .author-wrapper--text:hover {
         color: #1b39a8; }
   .notice .post-on-wrapper {
-    position: absolute;
-    top: 16px;
-    left: 170px;
-    width: 140px;
-    height: 30px; }
+    height: 30px;
+    padding: 0px 20px; }
     .notice .post-on-wrapper--text {
       color: #212121;
       height: 21px;
@@ -548,7 +540,8 @@ html {
       .notice .post-on-wrapper--text:hover {
         color: #1b39a8; }
   .notice--text {
-    padding: 0 20px; }
+    padding: 0 20px 20px;
+    min-height: 125px; }
   .notice_with-paragraph {
     margin: 0;
     color: inherit; }

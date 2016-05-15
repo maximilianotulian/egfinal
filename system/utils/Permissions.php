@@ -7,6 +7,7 @@
         const EDIT_NEWS = 'EDIT_NEWS';
         const DELETE_NEWS = 'DELETE_NEWS';
         const ADD_NEWS = 'ADD_NEWS';
+        const SEE_ALL_NEWS = 'SEE_ALL_NEWS';
     }
 
 ?>
