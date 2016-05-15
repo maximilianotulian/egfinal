@@ -369,6 +369,16 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: normal; }
 
+.mbottom-0 {
+  margin-bottom: 0px; }
+
+.mtop-0 {
+  margin-top: 0px; }
+
+.warning {
+  text-align: center;
+  color: red; }
+
 .banner {
   background-attachment: fixed;
   bottom: 0;
@@ -410,11 +420,15 @@ html {
     position: absolute;
     white-space: nowrap; }
   .header--nav-list {
-    float: right; }
-    .header--nav-list ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none; }
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    .header--nav-list li .dropdown-button i {
+      height: 64px;
+      line-height: 64px; }
+    .header--nav-list li .dropdown-content {
+      min-width: 200px; }
 
 .notice {
   background-color: #f5f5f5;

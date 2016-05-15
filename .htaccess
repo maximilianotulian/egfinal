@@ -3,6 +3,10 @@
     RewriteEngine On
     RewriteBase /
 
+	RewriteRule ^logout /controllers/logout.php [L]
+
+	RewriteRule ^account/bad_login index.php?pagina=account&bad_login=true [L]
+
     RewriteRule ^([a-zA-Z]+)$  index.php?pagina=$1 [L]
     RewriteRule ^([a-zA-Z]+)/$ index.php?pagina=$1 [L]
 
@@ -12,5 +16,6 @@
     RewriteRule ^admin/news/([0-9]+)$  /admin/index.php?pagina=news&new=$1 [L]
     RewriteRule ^admin/news/delete/([0-9]+)$  /admin/index.php?pagina=news&new=$1&action=true [L]
 
+	RewriteRule ^logout /controllers/logout.php;
 
 </ifModule>
