@@ -553,6 +553,22 @@ html {
     margin: 0;
     color: inherit; }
 
+.notice-complete {
+  background-color: #f5f5f5;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  min-height: 400px;
+  margin: 0.5rem 0 1rem 0;
+  position: relative;
+  transition: box-shadow .25s; }
+  .notice-complete--title {
+    font-size: 30px; }
+  .notice-complete--description {
+    text-align: justify; }
+  .notice-complete--image {
+    height: 300px;
+    width: 250px; }
+
 .icon {
   font-size: 3.56rem; }
 

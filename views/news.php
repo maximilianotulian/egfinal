@@ -30,12 +30,12 @@
                     </div>
 
                     <div class="notice--header">
-                        <h1 class="notice--header-title">The latest celphone</h1>
+                        <h1 class="notice--header-title">The latest cellphone</h1>
                     </div>
 
                     <div class="notice--description">
 
-                        <a class="notice--description-button">
+                        <a class="notice--description-button" href="/notice">
                             <span class="description-button-text">></span>
                         </a>
 
@@ -141,7 +141,7 @@
                     </div>
 
                     <div class="notice--header">
-                        <h1 class="notice--header-title">The latest celphone</h1>
+                        <h1 class="notice--header-title">The latest cellphone</h1>
                     </div>
 
                     <div class="notice--description">
