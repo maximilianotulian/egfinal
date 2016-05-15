@@ -17,6 +17,27 @@
             parent::add($new);
         }
 
+        function setAuthor($new){
+            $query_string = 'SELECT u.name, u.lastname FROM users u
+                             INNER JOIN news n on n.id_user = u.id
+                             WHERE n.id = ?';
+            $getNew = array(
+                'id' => $new['id']
+            );
+
+            $author = $this->executePrepareStatement($query_string, $getNew)[0];
+            $new['author'] = $author['name'].' '.$author['lastname'];
+            return $new;
+        }
+
+        function getAll(){
+            $news = parent::getAll();
+            foreach ($news as &$new) {
+                $new = $this->setAuthor($new);
+            }
+            return $news;
+        }
+
     }
 
  ?>

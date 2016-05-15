@@ -1,3 +1,15 @@
+<?php
+
+    include_once  $_SERVER["DOCUMENT_ROOT"].'/system/repositories/NewsRepository.php';
+    include_once  $_SERVER["DOCUMENT_ROOT"].'/system/utils/DateHelper.php';
+    Use \App\System\Repositories\NewsRepository as NewsRepository;
+    Use \App\System\Helpers\DateHelper as DateHelper;
+
+    $newsRepository = new NewsRepository();
+    $news = $newsRepository->getAll();
+
+ ?>
+
 <!-- banner section -->
 <div class="news news--baner banner--container">
     <?php $backgroundName="background2"; ?>
@@ -22,6 +34,7 @@
 <div class="news--notices container">
     <div class="section">
         <div class="row">
+<<<<<<< HEAD
 
             <div class="col s12 m4">
                 <div class="notice">
@@ -242,6 +255,15 @@
                 </div>
             </div>
 
+            <?php
+                foreach ($news as $key => $new) {
+                    ?>
+                    <div class="col s12 m4">
+                        <?php include 'new.php'; ?>
+                    </div>
+                    <?php
+                }
+             ?>
         </div>
     </div>
 </div>
