@@ -4,11 +4,12 @@
 
       <div class="col l12 s12">
         <h5 class="white-text">Site Map</h5>
-        <ul>
-          <li><a class="white-text" href="#!">Link 1</a></li>
-          <li><a class="white-text" href="#!">Link 2</a></li>
-          <li><a class="white-text" href="#!">Link 3</a></li>
-          <li><a class="white-text" href="#!">Link 4</a></li>
+        <ul class="footer--list">
+          <li><a class="footer--list-item" href="#!">Home</a></li>
+          <li><a class="footer--list-item" href="#!">Noticias</a></li>
+          <li><a class="footer--list-item" href="#!">Sobre Nosotros</a></li>
+          <li><a class="footer--list-item" href="#!">Contacto</a></li>
+          <li><a class="footer--list-item" href="#!">Ingresar</a></li>
         </ul>
       </div>
 
