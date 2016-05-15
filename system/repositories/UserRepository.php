@@ -1,7 +1,6 @@
 <?php
     namespace App\System\Repositories;
-
-    include_once 'BaseRepository.php';
+    include_once $_SERVER["DOCUMENT_ROOT"].'/system/repositories/BaseRepository.php';
     Use \App\System\Repositories\BaseRepository as BaseRepository;
 
     class UserRepository extends BaseRepository{

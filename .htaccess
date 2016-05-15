@@ -1,0 +1,12 @@
+<ifModule mod_rewrite.c>
+	Options +FollowSymLinks
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteRule ^admin/([a-zA-Z]+)$  /admin/index.php?pagina=$1 [L]
+    RewriteRule ^admin/([a-zA-Z]+)/$ /admin/index.php?pagina=$1 [L]
+
+    RewriteRule ^admin/news/([0-9]+)$  /admin/index.php?pagina=news&new=$1 [L]
+    RewriteRule ^admin/news/delete/([0-9]+)$  /admin/index.php?pagina=news&new=$1&action=true [L]
+
+</ifModule>

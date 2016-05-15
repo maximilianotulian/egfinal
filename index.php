@@ -15,7 +15,6 @@
 
 <?php if($loggedUser){
     echo 'Welcome ' . $loggedUser['username'];
-    var_dump(UserHelper::loggedUserHasPermission(Permissions::ADMIN_ACCESS));
     if ( isset($_COOKIE['user']) ){
         echo '<br />cookie saved <br />';
     }else{
@@ -25,6 +24,13 @@
         <form class="" action="logout.php" method="post">
             <input type="submit" name="name" value="logout">
         </form>
+        <?php
+            if(UserHelper::loggedUserHasPermission(Permissions::ADMIN_ACCESS)){
+                ?>
+                    <a href="admin/index.php">admin</a>
+                <?php
+            }
+         ?>
     <?php
     } else{
         ?>

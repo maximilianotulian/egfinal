@@ -1,9 +1,9 @@
 <?php
     namespace App\System\Helpers;
 
-    include_once 'system/repositories/UserRepository.php';
-    include_once 'DateHelper.php';
-    include_once 'Flags.php';
+    include_once $_SERVER["DOCUMENT_ROOT"].'/system/repositories/UserRepository.php';
+    include_once $_SERVER["DOCUMENT_ROOT"].'/system/utils/DateHelper.php';
+    include_once $_SERVER["DOCUMENT_ROOT"].'/system/utils/Flags.php';
 
     Use \App\System\Repositories\UserRepository as UserRepository;
     Use \App\System\Helpers\DateHelper as DateHelper;

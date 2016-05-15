@@ -1,7 +1,7 @@
 <?php
     namespace App\System\Repositories;
 
-    include_once 'system/db/DbManager.php';
+    include_once $_SERVER["DOCUMENT_ROOT"].'/system/db/DbManager.php';
     Use \App\System\DbManager as DbManager;
 
     class BaseRepository{
@@ -36,7 +36,7 @@
         function update($updatedElement){
             $query_string = 'UPDATE ' . $this->tableName . ' SET ';
             $query_string = $this->addUpdateValues($query_string, $updatedElement);
-            $query_string .= 'WHERE ID = ' . $updatedElement['id'];
+            $query_string .= ' WHERE ID = ' . $updatedElement['id'];
             return $this->executePrepareStatement($query_string, $updatedElement, $noResults = true);
         }
 
