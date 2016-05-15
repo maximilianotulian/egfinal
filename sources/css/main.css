@@ -369,35 +369,32 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: normal; }
 
-.banner-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255, 255, 255, 0.9); }
-
-.banner-container .section {
-  width: 100%; }
-
-@media only screen and (max-width: 992px) {
-  .banner-container .section {
-    position: absolute;
-    top: 40%; }
-  #index-banner .section {
-    top: 10%; } }
-
 .banner {
   background-attachment: fixed;
   bottom: 0;
-  height: 380px;
+  height: 300px;
   left: 0;
   right: 0;
   top: 0;
   z-index: -1; }
+  .banner--title {
+    background-color: inherit;
+    color: #4db6ac;
+    text-align: center; }
+  .banner--container {
+    min-height: 300px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, 0.9); }
+    .banner--container.section {
+      width: 100%; }
 
-.banner-title {
-  background-color: inherit;
-  color: #4db6ac;
-  text-align: center; }
+@media only screen and (max-width: 992px) {
+  .banner--container .section {
+    position: absolute;
+    top: 40%; }
+  #index-banner .section {
+    top: 10%; } }
 
 .header {
   background: rgba(255, 255, 255, 0.9); }
@@ -552,3 +549,6 @@ html {
 
 .news--notices {
   width: 90%; }
+
+.admin {
+  background-color: #3e2723; }
