@@ -6,8 +6,8 @@
     class DbManager{
 
         private $dbHost = 'localhost';
-        private $dbUser = 'admin';
-        private $dbPassword = 'admin';
+        private $dbUser = 'root';
+        private $dbPassword = 'root';
         private $dbName = 'portal';
         private $connection;
 
