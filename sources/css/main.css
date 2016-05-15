@@ -430,6 +430,9 @@ html {
     .header--nav-list li .dropdown-content {
       min-width: 200px; }
 
+.footer--list-item {
+  color: #cccccc; }
+
 .notice {
   background-color: #f5f5f5;
   border-radius: 2px;
