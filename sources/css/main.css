@@ -569,6 +569,14 @@ html {
 .icon {
   font-size: 3.56rem; }
 
+.comentaries h3 {
+  font-size: 25px; }
+
+.comentaries .new-comment {
+  padding: 15px 0px;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
 .home--icon {
   padding: 0 15px; }
 
