@@ -548,8 +548,6 @@ html {
       .notice .post-on-wrapper--text:hover {
         color: #1b39a8; }
   .notice--text {
-    position: absolute;
-    margin-top: 50px;
     padding: 0 20px; }
   .notice_with-paragraph {
     margin: 0;

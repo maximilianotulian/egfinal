@@ -38,7 +38,7 @@
                 $editNew['image'] = FileUpload::uploadFile($_FILES["image"], '/news/');
             }
         }
-        if (isset($new)){
+        if (isset($new) && $new != 0){
             $editNew['id'] = $new;
             $newsRepository->update($editNew);
         }else{
@@ -87,7 +87,7 @@
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <textarea id="full_text" class="materialize-textarea" name="full_text"><?php echo $editNew['intro_text'] ?></textarea>
+                <textarea id="full_text" class="materialize-textarea" name="full_text"><?php echo $editNew['full_text'] ?></textarea>
                 <label for="full_text">Texto Completo</label>
               </div>
             </div>
