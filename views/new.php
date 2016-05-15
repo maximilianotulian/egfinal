@@ -12,15 +12,6 @@
         <h1 class="notice--header-title"><?php echo $new['title'] ?></h1>
     </div>
 
-    <span class="post-on-wrapper">
-        <a class="post-on-wrapper--text"><?php echo DateHelper::formatDateES($new['created_at']) ?></a>
-    </span>
-
-    <div class="notice--text">
-        <p>
-            <?php echo $new['intro_text']; ?>
-        </p>
-    </div>
 
     <div class="notice--description">
 
@@ -34,5 +25,18 @@
             </a>
             <a class="author-wrapper--text"><?php echo $new['author'] ?></a>
         </span>
+
+        <span class="post-on-wrapper">
+            <a class="post-on-wrapper--text"><?php echo DateHelper::formatDateES($new['created_at']) ?></a>
+        </span>
+
     </div>
+
+    <div class="notice--text">
+        <p>
+            <?php echo $new['intro_text']; ?>
+        </p>
+    </div>
+
+
 </div>
