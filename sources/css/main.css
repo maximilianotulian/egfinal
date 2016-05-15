@@ -556,8 +556,12 @@ html {
   transition: box-shadow .25s; }
   .notice-complete--title {
     font-size: 30px; }
+  .notice-complete--author {
+    font-size: 20px; }
   .notice-complete--description {
     text-align: justify; }
+    .notice-complete--description p {
+      white-space: pre-line; }
   .notice-complete--image {
     height: 300px;
     width: 250px; }
@@ -597,7 +601,8 @@ html {
           top: 25px; }
     .admin--sidebar .options {
       background-color: #37474f;
-      padding: 16px 0; }
+      padding: 16px 0;
+      min-height: 425px; }
       .admin--sidebar .options--list {
         margin: 0; }
         .admin--sidebar .options--list-item {

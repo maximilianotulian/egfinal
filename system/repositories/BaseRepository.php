@@ -30,7 +30,7 @@
             $columnNames = array_keys($newElement);
             $query_string = $this->addColumnNames($query_string, $columnNames);
             $query_string = $this->addValues($query_string, count($columnNames));
-            return $this->executePrepareStatement($query_string, $newElement, $noResults = true);
+            return $this->executePrepareStatement($query_string, $newElement, $noResults = true, $insert = true);
         }
 
         function update($updatedElement){
@@ -48,7 +48,7 @@
             return $this->executePrepareStatement($query_string, $deleteElement, $noResults = true);
         }
 
-        private function addColumnNames($query_string, $columnNames){
+        protected function addColumnNames($query_string, $columnNames){
             foreach ($columnNames as $key => $columnName) {
                 $query_string .= $columnName . ',';
             }
@@ -57,7 +57,7 @@
             return $query_string;
         }
 
-        private function addValues($query_string, $quantity){
+        protected function addValues($query_string, $quantity){
             $query_string .= ' VALUES (';
             for ($i=1; $i <= $quantity; $i++) {
                 $query_string .= '?,';
@@ -67,7 +67,7 @@
             return $query_string;
         }
 
-        private function addUpdateValues($query_string, $updatedElement){
+        protected function addUpdateValues($query_string, $updatedElement){
             foreach ($updatedElement as $key => $value) {
                 $query_string .= $key . '=? ,';
             }
@@ -75,7 +75,7 @@
             return $query_string;
         }
 
-        private function getTypeString($newElement){
+        protected function getTypeString($newElement){
             $types = '';
             foreach ($newElement as $key => $value) {
                 switch (gettype($value)) {
@@ -96,7 +96,7 @@
             return $types;
         }
 
-        private function bindParameters($stmt, $newElement){
+        protected function bindParameters($stmt, $newElement){
             $types = $this->getTypeString($newElement);
             $params[] = $types;
 
@@ -109,7 +109,7 @@
             return $stmt;
         }
 
-        protected function executePrepareStatement($query_string, $element = null, $noResults = false){
+        protected function executePrepareStatement($query_string, $element = null, $noResults = false, $insert = false){
             $dbManager = new DbManager();
             $connection = $dbManager->getConnection();
             $return = null;
@@ -120,6 +120,9 @@
                 if ($stmt->execute()){
                     if($noResults){
                         $result = true;
+                    if($insert){
+                        $result = $connection->insert_id;
+                    }
                     }else{
                         $query = $stmt->get_result();
                         $result = $query->fetch_all(MYSQLI_ASSOC);

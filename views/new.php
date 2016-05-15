@@ -24,7 +24,7 @@
 
     <div class="notice--description">
 
-        <a class="notice--description-button">
+        <a class="notice--description-button" href="/news/<?php echo $new['id']; ?>">
             <span class="description-button-text">></span>
         </a>
 
