@@ -1,5 +1,6 @@
 .admin {
-
+    margin: 0;
+    
     &--nav {
         background-color: #263238;
 
@@ -12,19 +13,48 @@
         color: white;
         width: 100%;
 
-        &-header {
+        .header {
             background-color: #263238;
-            height: 100px;
+            height: 80px;
+            padding: 10px;
+            position: relative;
+
+            &--avatar {
+                width: 48px;
+                height: 48px;
+                display: inline-block;
+                border-radius: 24px;
+
+                &-text {
+                    position: absolute;
+                    color: white;
+                    left: 70px;
+                    top: 25px;
+                }
+            }
         }
 
-        &-options {
-            padding: 0 !important;
-            margin: 0 ;
+        .options {
             background-color: #37474f;
-        }
+            padding: 16px 0;
 
-        &-text {
-            color: grey;
+            &--list {
+                margin: 0;
+
+                &-item {
+                    display: block;
+                    font-weight: 500;
+                    padding: 16px 40px;
+                    margin: 0;
+                    opacity: 87;
+                    color: #a4a4a4;
+
+                    &:hover {
+                        background-color: #00BCD4;
+                        color: #37474F;
+                    }
+                }
+            }
         }
     }
 }

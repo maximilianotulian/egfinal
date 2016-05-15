@@ -571,20 +571,42 @@ html {
 .news--notices {
   width: 90%; }
 
-.admin--nav {
-  background-color: #263238; }
-  .admin--nav-text {
-    color: white; }
-
-.admin--sidebar {
-  color: white;
-  width: 100%; }
-  .admin--sidebar-header {
-    background-color: #263238;
-    height: 100px; }
-  .admin--sidebar-options {
-    padding: 0 !important;
-    margin: 0;
-    background-color: #37474f; }
-  .admin--sidebar-text {
-    color: grey; }
+.admin {
+  margin: 0; }
+  .admin--nav {
+    background-color: #263238; }
+    .admin--nav-text {
+      color: white; }
+  .admin--sidebar {
+    color: white;
+    width: 100%; }
+    .admin--sidebar .header {
+      background-color: #263238;
+      height: 80px;
+      padding: 10px;
+      position: relative; }
+      .admin--sidebar .header--avatar {
+        width: 48px;
+        height: 48px;
+        display: inline-block;
+        border-radius: 24px; }
+        .admin--sidebar .header--avatar-text {
+          position: absolute;
+          color: white;
+          left: 70px;
+          top: 25px; }
+    .admin--sidebar .options {
+      background-color: #37474f;
+      padding: 16px 0; }
+      .admin--sidebar .options--list {
+        margin: 0; }
+        .admin--sidebar .options--list-item {
+          display: block;
+          font-weight: 500;
+          padding: 16px 40px;
+          margin: 0;
+          opacity: 87;
+          color: #a4a4a4; }
+          .admin--sidebar .options--list-item:hover {
+            background-color: #00BCD4;
+            color: #37474F; }
