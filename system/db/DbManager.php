@@ -7,8 +7,8 @@
 
         private $dbHost = 'localhost';
         private $dbUser = 'root';
-        private $dbPassword = 'root';
-        private $dbName = 'portal';
+        private $dbPassword = '';
+        private $dbName = 'portal_db';
         private $connection;
 
         function __construct(){
