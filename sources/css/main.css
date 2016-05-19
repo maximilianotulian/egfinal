@@ -416,12 +416,13 @@ html {
     position: relative;
     margin: 0 auto; }
   .header--nav-logo {
-    color: black;
-    display: inline-block;
-    font-size: 2.1rem;
-    padding: 0;
+    color: #4db6ac;
+    font-size: 1.2rem;
     position: absolute;
-    white-space: nowrap; }
+    white-space: nowrap;
+    height: 60px; }
+    .header--nav-logo-title {
+      font-size: 2.1rem; }
   .header--nav-list {
     float: right;
     margin: 0;
@@ -501,6 +502,8 @@ html {
         box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22);
         outline: 0;
         transition: all 0.2s ease-out; }
+  .notice--social-media {
+    text-align: right; }
   .notice .description-button-text {
     font-size: 16px;
     position: absolute;
@@ -574,6 +577,37 @@ html {
 
 .icon {
   font-size: 3.56rem; }
+
+.social-icon {
+  border-radius: 50%;
+  color: #ffffff;
+  height: 35px;
+  margin-left: 0.7em;
+  padding: 10px 0 0;
+  text-align: center;
+  transition-duration: 0.3s;
+  width: 35px; }
+  .social-icon--item {
+    display: inline-block; }
+  .social-icon--description {
+    display: none; }
+  .social-icon:hover {
+    box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22);
+    transition: all 0.2s ease-out; }
+  .social-icon:focus {
+    outline: 0; }
+  .social-icon_facebook {
+    background-color: #3b5998; }
+    .social-icon_facebook:before {
+      content: "\f204"; }
+  .social-icon_twitter {
+    background-color: #55acee; }
+  .social-icon_google-plus {
+    background-color: #dd4b39; }
+  .social-icon_linkedin {
+    background-color: #0077b5; }
+  .social-icon_instagram {
+    background-color: #442b2b; }
 
 .comentaries h3 {
   font-size: 25px; }
