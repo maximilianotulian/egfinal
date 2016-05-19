@@ -391,6 +391,9 @@ html {
     background-color: inherit;
     color: #4db6ac;
     text-align: center; }
+  .banner--subtitle {
+    color: #ffffff;
+    font-weight: 400; }
   .banner--container {
     min-height: 300px;
     line-height: 0;

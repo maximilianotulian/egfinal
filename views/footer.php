@@ -3,9 +3,9 @@
     <div class="row">
 
       <div class="col l12 s12">
-        <h5 class="white-text">Site Map</h5>
+        <h5 class="white-text">Mapa del sitio</h5>
         <ul class="footer--list">
-          <li><a class="footer--list-item" href="#!">Home</a></li>
+          <li><a class="footer--list-item" href="#!">Inicio</a></li>
           <li><a class="footer--list-item" href="#!">Noticias</a></li>
           <li><a class="footer--list-item" href="#!">Sobre Nosotros</a></li>
           <li><a class="footer--list-item" href="#!">Contacto</a></li>

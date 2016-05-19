@@ -9,7 +9,7 @@
 <div class="admin--sidebar aside-nav">
     <?php if (UserHelper::loggedUserHasPermission(Permissions::LIST_NEWS)){ ?>
     <div class="header">
-        <img class="header--avatar" src="http://0.gravatar.com/avatar/0eae3b79fc7792e26ca50d66dd76bfdc?s=50&d=monsterid&r=g" />
+        <img class="header--avatar" src="/uploads/profile/default.png" />
         <a class="header--avatar-text"><?php echo $loggedUser['name'] ?></a>
     </div>
 
