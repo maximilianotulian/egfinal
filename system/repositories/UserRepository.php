@@ -97,6 +97,38 @@
             return $this->executePrepareStatement($query_string);
         }
 
+        function getAllTeachers(){
+            $query_string = 'SELECT * FROM users u
+            INNER JOIN user_role ur on ur.id_user =  u.id
+            INNER JOIN roles r on r.id = ur.id_role
+            WHERE r.id = 2';
+            return $this->executePrepareStatement($query_string);
+        }
+
+        function asignTeacherToSubject($teacher_id, $subject_id){
+            $query_string = 'INSERT INTO user_subject (';
+            $newElement = array(
+                'id_user' => $teacher_id,
+                'id_subject' => $subject_id,
+                'active' => 1
+            );
+            $columnNames = array_keys($newElement);
+            $query_string = $this->addColumnNames($query_string, $columnNames);
+            $query_string = $this->addValues($query_string, count($columnNames));
+            return $this->executePrepareStatement($query_string, $newElement, $noResults = true);
+        }
+
+        function removeTeacherFromSubject($teacher_id, $subject_id){
+            $query_string = 'DELETE FROM user_subject
+                             WHERE id_user = ?
+                             AND id_subject = ?';
+            $deleteElement = array(
+                'id_user' => $teacher_id,
+                'id_subject' => $subject_id
+            );
+            return $this->executePrepareStatement($query_string, $deleteElement, $noResults = true);
+        }
+
     }
 
  ?>
