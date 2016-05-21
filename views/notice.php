@@ -17,65 +17,63 @@ $comments = $commentRepository->getAllByNew($foundNew['id']);
 
 <div class="news--notices container">
     <div class="section">
-        <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="notice-complete col s12">
+                    <div class="col s12 m12">
+                        <h3 class="notice-complete--title">
+                            <?php echo $foundNew['title']; ?>
+                        </h3>
+                        <h4 class="notice-complete--author"><i>Por <?php echo $foundNew['author'] ?></i> - <?php echo DateHelper::formatDateES($foundNew['created_at']) ?></h4>
+                    </div>
 
-            <div class="notice-complete col s12 m8 offset-m2">
+                    <div class="notice-complete--description col s12">
+                        <p><?php echo $foundNew['intro_text'] ?></p>
 
-                <div class="col s12 m12">
-                    <h3 class="notice-complete--title">
-                        <?php echo $foundNew['title']; ?>
-                    </h3>
-                    <h4 class="notice-complete--author"><i>Por <?php echo $foundNew['author'] ?></i> - <?php echo DateHelper::formatDateES($foundNew['created_at']) ?></h4>
-                </div>
+                        <img class="notice-complete--image" alt="<?php echo $foundNew['title']; ?>" src="<?php echo $foundNew['image'] ?>" />
 
-                <div class="notice-complete--description col s12 m8">
-                    <p><?php echo $foundNew['intro_text'] ?></p>
-                    <p><?php echo $foundNew['full_text'] ?></p>
+                        <p><?php echo $foundNew['full_text'] ?></p>
 
-                    <ul class="notice--social-media col s12 m8">
-                        <li class="social-icon--item">
-                            <a class="social-icon--link"  onclick="onIconCLick(this.href);" href="https://www.youtube.com/watch?v=F-7OFftB43w">
-                                <span class="genericon genericon-facebook social-icon social-icon_facebook">
-                                    <span class="social-icon--description">Facebook</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="social-icon--item">
-                            <a class="social-icon--link" href="#" onclick="onIconCLick">
-                                <span class="genericon genericon-twitter social-icon social-icon_twitter">
-                                    <span class="social-icon--description">Twitter</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="social-icon--item">
-                            <a class="social-icon--link" href="#" onclick="onIconCLick">
-                                <span class="genericon genericon-instagram social-icon social-icon_instagram">
-                                    <span class="social-icon--description">Instagram</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="social-icon--item" onclick="onIconCLick">
-                            <a class="social-icon--link" href="#">
-                                <span class="genericon genericon-linkedin social-icon social-icon_linkedin">
-                                    <span class="social-icon--description">Linkedin</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="social-icon--item" onclick="onIconCLick">
-                            <a class="social-icon--link" href="#">
-                                <span class="genericon genericon-googleplus social-icon social-icon_google-plus">
-                                    <span class="social-icon--description">Google Plus</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col s12 m4">
-                    <img class="notice-complete--image" alt="250x300 image" src="<?php echo $foundNew['image'] ?>" />
+                        <ul class="notice--social-media col s12 m8">
+                            <li class="social-icon--item">
+                                <a class="social-icon--link"  onclick="onIconCLick(this.href);" href="https://www.youtube.com/watch?v=F-7OFftB43w">
+                                    <span class="genericon genericon-facebook social-icon social-icon_facebook">
+                                        <span class="social-icon--description">Facebook</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social-icon--item">
+                                <a class="social-icon--link" href="#" onclick="onIconCLick">
+                                    <span class="genericon genericon-twitter social-icon social-icon_twitter">
+                                        <span class="social-icon--description">Twitter</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social-icon--item">
+                                <a class="social-icon--link" href="#" onclick="onIconCLick">
+                                    <span class="genericon genericon-instagram social-icon social-icon_instagram">
+                                        <span class="social-icon--description">Instagram</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social-icon--item" onclick="onIconCLick">
+                                <a class="social-icon--link" href="#">
+                                    <span class="genericon genericon-linkedin social-icon social-icon_linkedin">
+                                        <span class="social-icon--description">Linkedin</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social-icon--item" onclick="onIconCLick">
+                                <a class="social-icon--link" href="#">
+                                    <span class="genericon genericon-googleplus social-icon social-icon_google-plus">
+                                        <span class="social-icon--description">Google Plus</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
