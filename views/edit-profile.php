@@ -1,5 +1,5 @@
 <div class="row profile--form">
-    <div class="col s10">
+    <div class="col s12">
         <div class="row">
             <span class="profile--form-title">Perfil</span>
             <form class="col s12 profile--form">
