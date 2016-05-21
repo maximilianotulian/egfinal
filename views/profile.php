@@ -14,17 +14,9 @@
         </div>
 
         <div class="col s12 m8">
-
-            <div class="row profile--user">
-                <div class="col s12">
-                    <div class="user">
-                        <img class="user--avatar" src="/sources/photos/default.png" />
-                        <a class="user--avatar-text"><?php echo $loggedUser['name'] ?></a>
-                    </div>
-                </div>
-            </div>
-
             <?php
+                include 'user.php';
+
                 $action = (isset($_GET['action']) ? $_GET['action'] : null);
 
                 if ($action === 'password') {

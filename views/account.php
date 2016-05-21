@@ -33,7 +33,6 @@
             <?php } ?>
             <button class="right btn waves-effect waves-light" type="submit" name="action">
                 Ingresar
-                <i class="material-icons right">trending_flat</i>
             </button>
 
         </form>
@@ -93,7 +92,6 @@
 
             <button class="right btn waves-effect waves-light" type="submit" name="action">
                 Registrarse
-                <i class="material-icons right">send</i>
             </button>
 
         </form>
