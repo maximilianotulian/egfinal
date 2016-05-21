@@ -578,8 +578,7 @@ footer.page-footer {
     .notice-complete--description p {
       white-space: pre-line; }
   .notice-complete--image {
-    height: 300px;
-    width: 250px; }
+    max-width: 100%; }
 
 .icon {
   font-size: 3.56rem; }
