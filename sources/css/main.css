@@ -488,15 +488,15 @@ html {
       font-family: 'Material Design Iconic Font';
       font-size: 20px;
       font-size: 2rem;
-      height: 50px;
+      height: 40px;
       padding: 16px 0;
       position: absolute;
       line-height: 1;
-      right: 25px;
+      right: 20px;
       transition-duration: 0.3s;
       text-align: center;
-      top: -26px;
-      width: 50px; }
+      top: -20px;
+      width: 40px; }
       .notice--description-button:hover {
         color: white;
         box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22);
@@ -505,9 +505,10 @@ html {
   .notice--social-media {
     text-align: right; }
   .notice .description-button-text {
-    font-size: 16px;
+    font-size: 14px;
     position: absolute;
-    left: 20px; }
+    left: 15px;
+    top: 14px; }
   .notice .author-wrapper {
     height: 30px; }
     .notice .author-wrapper--image {

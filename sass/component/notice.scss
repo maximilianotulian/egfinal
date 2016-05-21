@@ -61,15 +61,15 @@
             font-family: 'Material Design Iconic Font';
             font-size: 20px;
             font-size: 2rem;
-            height: 50px;
+            height: 40px;
             padding: 16px 0;
             position: absolute;
             line-height: 1;
-            right: 25px;
+            right: 20px;
             transition-duration: 0.3s;
             text-align: center;
-            top: -26px;
-            width: 50px;
+            top: -20px;
+            width: 40px;
 
             &:hover {
                 color: white;
@@ -81,13 +81,14 @@
     }
 
     &--social-media {
-        text-align: right; 
+        text-align: right;
     }
 
     .description-button-text {
-        font-size: 16px;
+        font-size: 14px;
         position: absolute;
-        left: 20px;
+        left: 15px;
+        top: 14px;
     }
 
     .author-wrapper {
