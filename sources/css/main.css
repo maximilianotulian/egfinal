@@ -667,6 +667,10 @@ footer.page-footer {
 
 .proyect {
   width: 90%; }
+  .proyect .logo {
+    width: 300px;
+    margin: 0 auto;
+    display: block; }
   .proyect .tecnologies {
     margin-top: 50px; }
     .proyect .tecnologies .tecnologie {
