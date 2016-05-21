@@ -48,5 +48,16 @@
             return $this->executePrepareStatement($query_string, $searchElement);
         }
 
+        function getSubjectsByStudent($student_id){
+            $query_string = 'SELECT * FROM subjects s
+                         INNER JOIN user_subject us ON us.id_subject = s.id
+                         WHERE us.id_user = ? and us.active';
+            $searchElement = array(
+             'id_user' => $student_id
+            );
+
+            return $this->executePrepareStatement($query_string, $searchElement);
+        }
+
     }
 ?>

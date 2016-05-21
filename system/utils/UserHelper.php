@@ -185,6 +185,11 @@
             $userRepository->setUserRole($userId, $roleId);
         }
 
+        public static function userHasSubject($user_id, $subject_id){
+            $userRepository = new UserRepository();
+            return $userRepository->userHasSubject($user_id, $subject_id);
+        }
+
     }
 
  ?>

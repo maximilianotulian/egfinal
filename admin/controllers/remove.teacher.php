@@ -5,7 +5,7 @@
 
     if (isset($_GET['id_subject']) && isset($_GET['id_teacher']) ){
         $userRepository = new UserRepository();
-        $userRepository->removeTeacherFromSubject($_GET['id_teacher'], $_GET['id_subject']);
+        $userRepository->removeUserFromSubject($_GET['id_teacher'], $_GET['id_subject']);
         header('Location: /admin/subjects/'.$_GET['id_subject']);
         die();
     }else{

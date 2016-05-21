@@ -34,6 +34,10 @@
             $news = parent::getAll();
             foreach ($news as &$new) {
                 $new = $this->setAuthor($new);
+                $new = $this->setType($new);
+                if($new['id_subject']){
+                    $new = $this->setSubject($new);
+                }
             }
             return $news;
         }
@@ -41,6 +45,24 @@
         function getById($id){
             $new = parent::getById($id);
             $new[0] = $this->setAuthor($new[0]);
+            return $new;
+        }
+
+        function setType($new){
+            $query_string = 'SELECT * FROM news_type WHERE id = ?';
+            $getNew = array(
+                'id' => $new['id_type']
+            );
+            $new['type'] = $this->executePrepareStatement($query_string, $getNew)[0];
+            return $new;
+        }
+
+        function setSubject($new){
+            $query_string = 'SELECT * FROM subjects WHERE id = ?';
+            $getNew = array(
+                'id' => $new['id_subject']
+            );
+            $new['subject'] = $this->executePrepareStatement($query_string, $getNew)[0];
             return $new;
         }
 

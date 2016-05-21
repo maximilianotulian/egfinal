@@ -6,9 +6,9 @@
     class DbManager{
 
         private $dbHost = 'localhost';
-        private $dbUser = 'root';
-        private $dbPassword = 'root';
-        private $dbName = 'portal_db';
+        private $dbUser = 'admin';
+        private $dbPassword = 'admin';
+        private $dbName = 'portal';
         private $connection;
 
         function __construct(){

@@ -105,28 +105,47 @@
             return $this->executePrepareStatement($query_string);
         }
 
-        function asignTeacherToSubject($teacher_id, $subject_id){
+        function asignUserToSubject($newAsignation){
             $query_string = 'INSERT INTO user_subject (';
-            $newElement = array(
+            $columnNames = array_keys($newAsignation);
+            $query_string = $this->addColumnNames($query_string, $columnNames);
+            $query_string = $this->addValues($query_string, count($columnNames));
+            return $this->executePrepareStatement($query_string, $newAsignation, $noResults = true);
+        }
+
+        function asignTeacherToSubject($teacher_id, $subject_id){
+            $newAsignation = array(
                 'id_user' => $teacher_id,
                 'id_subject' => $subject_id,
                 'active' => 1
             );
-            $columnNames = array_keys($newElement);
-            $query_string = $this->addColumnNames($query_string, $columnNames);
-            $query_string = $this->addValues($query_string, count($columnNames));
-            return $this->executePrepareStatement($query_string, $newElement, $noResults = true);
+            return $this->asignUserToSubject($newAsignation);
         }
 
-        function removeTeacherFromSubject($teacher_id, $subject_id){
+        function removeUserFromSubject($id_user, $subject_id){
             $query_string = 'DELETE FROM user_subject
                              WHERE id_user = ?
                              AND id_subject = ?';
             $deleteElement = array(
-                'id_user' => $teacher_id,
+                'id_user' => $id_user,
                 'id_subject' => $subject_id
             );
             return $this->executePrepareStatement($query_string, $deleteElement, $noResults = true);
+        }
+
+        function userHasSubject($user_id, $subject_id){
+            $query_string = 'SELECT * FROM user_subject
+                             WHERE id_user = ?
+                             AND id_subject = ?';
+            $searchElement = array(
+                'id_user' => $user_id,
+                'id_subject' => $subject_id
+            );
+            if ($this->executePrepareStatement($query_string, $searchElement)){
+                return true;
+            } else {
+                return false;
+            }
         }
 
     }

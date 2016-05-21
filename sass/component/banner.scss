@@ -6,7 +6,8 @@
     right: 0;
     top: 0;
     z-index: -1;
-
+    background-size: cover;
+    background-repeat: no-repeat;
     &--title {
         background-color: inherit;
         color: #4db6ac;
@@ -15,7 +16,7 @@
 
     &--subtitle {
         color: #ffffff;
-        font-weight: 400;       
+        font-weight: 400;
     }
 
     &--container {

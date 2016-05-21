@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="section">
+    <div class="section contact">
 
         <div class="row">
             <form class="col s12 l8 offset-l2" method="post" action="/controllers/contact.php">

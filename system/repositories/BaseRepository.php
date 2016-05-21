@@ -91,6 +91,9 @@
                     case 'boolean':
                         $types .= 'i';
                         break;
+                    case 'NULL':
+                        $types .= 's';
+                        break;
                 }
             }
             return $types;
