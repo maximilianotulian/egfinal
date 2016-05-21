@@ -1,8 +1,10 @@
 <div class="row profile--form">
     <div class="col s12">
         <div class="row">
-            <span class="profile--form-title">Perfil</span>
-            <form class="col s12 profile--form">
+
+            <form class="col s12 offset-l1 profile--form">
+
+                <h4 >Perfil</h4>
 
                 <div class="row profile--form-row">
                     <div class="input-field col s6 profile--form-row-element">

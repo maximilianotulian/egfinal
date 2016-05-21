@@ -3,6 +3,10 @@
 
         <div class="row">
             <form class="col s12 l8 offset-l2" method="post" action="/controllers/contact.php">
+                <div class="contact--title">
+                    <h4>Contacto</h4>
+                </div>
+                
                 <div class="row">
                     <div class="input-field col s6">
                         <input id="first_name" required type="text" class="validate" name="name">
@@ -30,7 +34,6 @@
 
                 <button class="right btn waves-effect waves-light" type="submit" name="action">
                     Enviar
-                    <i class="material-icons right">send</i>
                 </button>
             </form>
         </div>
