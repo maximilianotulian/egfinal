@@ -617,6 +617,42 @@ html {
   border-radius: 2px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
+.user {
+  height: 80px;
+  padding: 10px;
+  position: relative; }
+  .user--avatar {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    border-radius: 24px; }
+    .user--avatar-text {
+      position: absolute;
+      left: 70px;
+      top: 25px; }
+
+.sidebar {
+  background-color: #263238;
+  color: white;
+  width: 100%;
+  margin-bottom: 0; }
+  .sidebar .options {
+    background-color: #37474f;
+    padding: 16px 0;
+    min-height: 430px; }
+    .sidebar .options--list {
+      margin: 0; }
+      .sidebar .options--list-item {
+        display: block;
+        font-weight: 500;
+        padding: 16px 40px;
+        margin: 0;
+        opacity: 87;
+        color: #a4a4a4; }
+        .sidebar .options--list-item:hover {
+          background-color: #00BCD4;
+          color: #37474F; }
+
 .home--icon {
   padding: 0 15px; }
 
@@ -629,37 +665,31 @@ html {
     background-color: #263238; }
     .admin--nav-text {
       color: white; }
-  .admin--sidebar {
-    color: white;
-    width: 100%; }
-    .admin--sidebar .header {
-      background-color: #263238;
-      height: 80px;
-      padding: 10px;
-      position: relative; }
-      .admin--sidebar .header--avatar {
-        width: 48px;
-        height: 48px;
-        display: inline-block;
-        border-radius: 24px; }
-        .admin--sidebar .header--avatar-text {
-          position: absolute;
-          color: white;
-          left: 70px;
-          top: 25px; }
-    .admin--sidebar .options {
-      background-color: #37474f;
-      padding: 16px 0;
-      min-height: 425px; }
-      .admin--sidebar .options--list {
-        margin: 0; }
-        .admin--sidebar .options--list-item {
-          display: block;
-          font-weight: 500;
-          padding: 16px 40px;
-          margin: 0;
-          opacity: 87;
-          color: #a4a4a4; }
-          .admin--sidebar .options--list-item:hover {
-            background-color: #00BCD4;
-            color: #37474F; }
+
+.profile--wrapper {
+  background-color: #f5f5f5;
+  margin-top: 2px; }
+
+.profile--user {
+  padding-left: 30%;
+  padding-top: 3%; }
+
+.profile--form {
+  padding-left: 40px; }
+  .profile--form-title {
+    font-size: 18px; }
+  .profile--form-row {
+    margin-bottom: 0; }
+    .profile--form-row-element-button {
+      padding: 0 1rem; }
+
+.profile .options {
+  background-color: #e6e6e6;
+  height: 830px;
+  padding-right: 0; }
+  .profile .options--list-item {
+    color: black; }
+
+.profile .message {
+  font-size: 25px;
+  padding: 15px 0; }
