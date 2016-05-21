@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row profile--form">
     <span class="profile--form-title">Cambiar contraseña</span>
     <form class="col s12 profile--form">
 

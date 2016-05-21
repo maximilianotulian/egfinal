@@ -18,8 +18,8 @@
 
                 <div class="row profile--form-row">
                     <div class="input-field col s12 l6 profile--form-row-element">
-                        <input id="username" type="text" class="validate" name="username" required="required" title="Por favor ingrese su usuario">
-                        <label for="username">Usuario</label>
+                        <input id="address" type="text" class="validate" name="address">
+                        <label for="address">Dirección</label>
                     </div>
                     <div class="col s12 l6 file-field input-field">
                         <div class="btn waves-effect waves-light profile--form-row-element-button">
@@ -29,6 +29,18 @@
                         <div class="file-path-wrapper">
                             <input class="file-path validate" type="text">
                         </div>
+                    </div>
+                </div>
+
+                <div class="row profile--form-row">
+                    <div class="input-field col s6 profile--form-row-element">
+                        <input id="phone" type="text" class="validate" name="phone">
+                        <label for="phone">Telefono</label>
+                    </div>
+
+                    <div class="input-field col s6 profile--form-row-element">
+                        <input id="webPage" type="text" class="validate" name="webPage">
+                        <label for="webPage">Pagina Web</label>
                     </div>
                 </div>
 
