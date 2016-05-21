@@ -1,4 +1,3 @@
-
 <?php
     include_once  $_SERVER["DOCUMENT_ROOT"].'/system/utils/UserHelper.php';
     include_once  $_SERVER["DOCUMENT_ROOT"].'/system/utils/Permissions.php';
@@ -6,11 +5,11 @@
     Use \App\System\Helpers\UserHelper as UserHelper;
  ?>
 
-<div class="admin--sidebar aside-nav">
+<div class="admin--sidebar sidebar aside-nav">
 
-    <div class="header">
-        <img class="header--avatar" src="/sources/photos/default.png" />
-        <a class="header--avatar-text"><?php echo $loggedUser['name'] ?></a>
+    <div class="user">
+        <img class="user--avatar" src="/sources/photos/default.png" />
+        <a class="user--avatar-text white-text"><?php echo $loggedUser['name'] ?></a>
     </div>
     <?php if (UserHelper::loggedUserHasPermission(Permissions::LIST_NEWS)){ ?>
     <div class="options">

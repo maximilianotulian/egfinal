@@ -5,13 +5,13 @@
 
 <div class="notice">
     <div class="notice--wrapper">
-        <img class="notice--image" src="<?php echo $new['image'] ?>" alt="notice 1">
+        <?php $image = isset($new['image']) ? $new['image'] : "uploads/news/4XdY39Fvlt6BGgQ.jpg"; ?>
+        <img class="notice--image" src="<?php echo $image ?>" alt="notice 1">
     </div>
 
     <div class="notice--header">
         <h1 class="notice--header-title"><?php echo $new['title'] ?></h1>
     </div>
-
 
     <div class="notice--description">
 
@@ -21,7 +21,8 @@
 
         <span class="author-wrapper">
             <a class"author-wrapper--image">
-                <img class="author-wrapper--image-avatar" src="http://0.gravatar.com/avatar/0eae3b79fc7792e26ca50d66dd76bfdc?s=50&d=monsterid&r=g" />
+                <?php $avatar = isset($new['avatar']) ? $new['avatar'] : "sources/photos/default.png";?>
+                <img class="author-wrapper--image-avatar" src="<?php echo $avatar ?>" />
             </a>
             <a class="author-wrapper--text"><?php echo $new['author'] ?></a>
         </span>

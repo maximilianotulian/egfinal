@@ -11,9 +11,12 @@
 
 	RewriteRule account/register$ index.php?pagina=account [L,QSA]
 
+	RewriteRule ^profile/([a-zA-Z]+)$  index.php?pagina=profile&action=$1 [L,QSA]
+
     RewriteRule ^([a-zA-Z]+)$  index.php?pagina=$1 [L]
     RewriteRule ^([a-zA-Z]+)/$ index.php?pagina=$1 [L]
 
     RewriteRule ^news/([0-9]+)$  index.php?pagina=news&new_id=$1 [L]
+
 
 </ifModule>
