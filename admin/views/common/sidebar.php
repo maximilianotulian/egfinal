@@ -9,7 +9,7 @@
 <div class="admin--sidebar aside-nav">
 
     <div class="header">
-        <img class="header--avatar" src="http://0.gravatar.com/avatar/0eae3b79fc7792e26ca50d66dd76bfdc?s=50&d=monsterid&r=g" />
+        <img class="header--avatar" src="/sources/photos/default.png" />
         <a class="header--avatar-text"><?php echo $loggedUser['name'] ?></a>
     </div>
     <?php if (UserHelper::loggedUserHasPermission(Permissions::LIST_NEWS)){ ?>
@@ -21,7 +21,7 @@
     <?php if (UserHelper::loggedUserHasPermission(Permissions::LIST_SUBJECTS)){ ?>
         <ul class="options--list">
             <li><a class="options--list-item" href="/admin/subjects">Materias</a></li>
-        </ul> 
+        </ul>
     <?php } ?>
     <?php if (UserHelper::loggedUserHasPermission(Permissions::LIST_FILES)){ ?>
         <ul class="options--list">
@@ -30,7 +30,7 @@
     <?php } ?>
     <?php if (UserHelper::loggedUserHasPermission(Permissions::EDIT_USERS)){ ?>
         <ul class="options--list">
-            <li><a class="options--list-item" href="/admin/users">Editar usuarios</a></li>
+            <li><a class="options--list-item" href="/admin/users">Usuarios</a></li>
         </ul>
     <?php } ?>
 

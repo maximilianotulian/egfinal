@@ -1,3 +1,55 @@
 .icon {
     font-size: 3.56rem;
 }
+
+.social-icon {
+    border-radius: 50%;
+    color: #ffffff;
+    height: 35px;
+    margin-left: 0.7em;
+    padding: 10px 0 0;
+    text-align: center;
+    transition-duration: 0.3s;
+    width: 35px;
+
+    &--item {
+        display: inline-block;
+    }
+
+    &--description {
+        display: none;
+    }
+
+    &:hover {
+        box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22);
+        transition: all 0.2s ease-out;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    &_facebook {
+        background-color: #3b5998;
+
+        &:before {
+            content: "\f204";
+        }
+    }
+
+    &_twitter {
+        background-color: #55acee;
+    }
+
+    &_google-plus {
+        background-color: #dd4b39;
+    }
+
+    &_linkedin {
+        background-color: #0077b5;
+    }
+
+    &_instagram {
+        background-color: #442b2b;
+    }
+}
