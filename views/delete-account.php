@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row profile--form">
     <form class="col s12 profile--form">
 
         <div class="row profile--form-row">

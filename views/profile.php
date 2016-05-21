@@ -1,10 +1,20 @@
-<div class="profile container">
+<div class="profile">
     <div class="row profile--wrapper">
 
-        <div class="col s12 m4">
+        <div class="col s12 m2 no-padding">
             <div class="row sidebar">
                 <div class="options">
-                    <ul class="options--list">
+
+                    <div class="row profile--user">
+                        <div class="col s12">
+                            <div class="user">
+                                <img class="user--avatar" src="/sources/photos/default.png" />
+                                <a class="user--avatar-text black-text"><?php echo $loggedUser['name'] ?></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="options--list center">
                         <li><a class="options--list-item" href="/profile/">Actualizar perfil</a></li>
                         <li><a class="options--list-item" href="/profile/password">Cambiar contraseña</a></li>
                         <li><a class="options--list-item" href="/profile/account">Deshabilitar cuenta</a></li>
@@ -13,10 +23,8 @@
             </div>
         </div>
 
-        <div class="col s12 m8">
+        <div class="col s12 m8 form-wrapper">
             <?php
-                include 'user.php';
-
                 $action = (isset($_GET['action']) ? $_GET['action'] : null);
 
                 if ($action === 'password') {
