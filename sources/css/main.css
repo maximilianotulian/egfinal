@@ -470,7 +470,9 @@ footer.page-footer {
     position: relative; }
     .notice--header-title {
       padding: 0 35px 0;
-      border: 0; }
+      border: 0;
+      color: rgba(0, 0, 0, 0.87);
+      min-height: 66px; }
   .notice--description {
     background: white;
     border-top: 1px solid #DFDFDF;
@@ -507,6 +509,8 @@ footer.page-footer {
         box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22);
         outline: 0;
         transition: all 0.2s ease-out; }
+  .notice--text {
+    color: rgba(0, 0, 0, 0.87); }
   .notice--social-media {
     text-align: right; }
   .notice .description-button-text {
@@ -660,6 +664,30 @@ footer.page-footer {
 
 .home--icon {
   padding: 0 15px; }
+
+.proyect {
+  width: 90%; }
+  .proyect .logo {
+    width: 300px;
+    margin: 0 auto;
+    display: block; }
+  .proyect .tecnologies {
+    margin-top: 50px; }
+    .proyect .tecnologies .tecnologie {
+      margin: 20px 0px; }
+      .proyect .tecnologies .tecnologie h5 {
+        text-align: center;
+        margin-bottom: 20px; }
+      .proyect .tecnologies .tecnologie .image-wrapper {
+        height: 115px; }
+        .proyect .tecnologies .tecnologie .image-wrapper img {
+          max-width: 200px;
+          margin: 0 auto;
+          display: block; }
+          .proyect .tecnologies .tecnologie .image-wrapper img.smaller {
+            max-width: 150px; }
+      .proyect .tecnologies .tecnologie p {
+        text-align: center; }
 
 .news--notices {
   width: 90%; }

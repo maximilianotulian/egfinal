@@ -20,7 +20,8 @@
         'intro_text' => '',
         'full_text' => '',
         'author' => $loggedUser['username'],
-        'id_user' => $loggedUser['id']
+        'id_user' => $loggedUser['id'],
+        'id_type' => 0
     );
 
     if ($new){

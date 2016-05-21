@@ -66,6 +66,18 @@
             return $new;
         }
 
+        function getHomeNews(){
+            $query_string = 'SELECT * FROM news WHERE id_type = 1 LIMIT 3';
+            $news = $this->executePrepareStatement($query_string);
+            foreach ($news as &$new) {
+                $new = $this->setAuthor($new);
+                if($new['id_subject']){
+                    $new = $this->setSubject($new);
+                }
+            }
+            return $news;
+        }
+
     }
 
  ?>

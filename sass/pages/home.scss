@@ -3,3 +3,35 @@
         padding: 0 15px;
     }
 }
+.proyect{
+    width: 90%;
+    .logo{
+        width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    .tecnologies{
+        margin-top: 50px;
+        .tecnologie{
+            margin: 20px 0px;
+            h5{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .image-wrapper{
+                height: 115px;
+                img{
+                    max-width: 200px;
+                    margin: 0 auto;
+                    display: block;
+                    &.smaller{
+                        max-width: 150px;
+                    }
+                }
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
