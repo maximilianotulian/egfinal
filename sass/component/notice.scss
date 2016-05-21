@@ -35,6 +35,8 @@
         &-title {
             padding: 0 35px 0;
             border: 0;
+            color: rgba(0,0,0,0.87);
+            min-height: 66px;
         }
     }
 
@@ -78,6 +80,10 @@
                 transition: all 0.2s ease-out;
             }
         }
+    }
+
+    &--text{
+        color: rgba(0,0,0,0.87);
     }
 
     &--social-media {
@@ -180,6 +186,6 @@
     }
 
     &--image {
-         max-width: 100%; 
+         max-width: 100%;
     }
 }
