@@ -1,3 +1,12 @@
+<?php
+    include_once  $_SERVER["DOCUMENT_ROOT"].'/system/utils/UserHelper.php';
+    Use \App\System\Helpers\UserHelper as UserHelper;
+
+    $loggedUser = UserHelper::getLoggedUser();
+
+
+ ?>
+
 <div class="profile">
     <div class="row profile--wrapper">
 

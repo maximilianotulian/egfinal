@@ -190,6 +190,14 @@
             return $userRepository->userHasSubject($user_id, $subject_id);
         }
 
+        public static function updateLoggedUser(){
+            $loggedUser = self::getLoggedUser();
+            $userRepository = new UserRepository();
+            $updatedUser = $userRepository->getById($loggedUser['id'])[0];
+            $updatedUser['permissions'] = $userRepository->getUserPermissions($updatedUser['id']);
+            self::storeUserInSession($updatedUser);
+        }
+
     }
 
  ?>
