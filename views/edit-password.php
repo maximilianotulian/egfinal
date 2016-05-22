@@ -4,8 +4,8 @@
  ?>
 
 <div class="row profile--form">
-    <span class="profile--form-title">Cambiar contraseña</span>
     <form class="col s12 profile--form" method="post" action="/controllers/change.password.php">
+        <h4>Cambiar contraseña</h4> <hr />
         <div class="row profile--form-row">
             <div class="input-field col s12 profile--form-row-element">
                 <input id="old_password" type="password" class="validate" name="old_password1" required="required">
