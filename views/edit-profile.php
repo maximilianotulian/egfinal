@@ -6,7 +6,7 @@
     <div class="col s12">
         <div class="row">
             <form class="col s12 profile--form" method="post" enctype="multipart/form-data" action="/controllers/edit.profile.php">
-                <h4 >Perfil</h4>
+                <h4 >Perfil</h4><hr />
                 <div class="row profile--form-row">
                     <div class="input-field col s6 profile--form-row-element">
                         <input id="first_name" type="text" class="validate" name="name" disabled value="<?php echo $loggedUser['name']; ?>">

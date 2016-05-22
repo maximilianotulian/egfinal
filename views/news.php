@@ -32,9 +32,9 @@
     <div class="news--notices container">
         <div class="section">
             <div class="row">
-                <div class="col s12 l6 offset-l3">
+                <div class="col s12 l12">
                     <div class="news--title">
-                        <h4>Noticias</h4>
+                        <h4>Noticias</h4><hr />
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>

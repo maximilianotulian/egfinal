@@ -46,3 +46,8 @@
         </script>
     <?php } ?>
 <?php } ?>
+<?php if (isset($_GET['bad_login'])) { ?>
+    <script type="text/javascript">
+        $('#login-modal').openModal();
+    </script>
+<?php } ?>

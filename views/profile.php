@@ -30,7 +30,7 @@
                     <ul class="options--list center">
                         <li><a class="options--list-item" href="/profile/">Actualizar perfil</a></li>
                         <li><a class="options--list-item" href="/profile/password">Cambiar contraseña</a></li>
-                        <li><a class="options--list-item" href="/profile/account">Deshabilitar cuenta</a></li>
+                        <li><a class="options--list-item" href="/profile/subjects">Mis catedras</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,8 +42,8 @@
 
                 if ($action === 'password') {
                     include 'edit-password.php';
-                } else if ($action === 'account') {
-                    include 'delete-account.php';
+                } else if ($action === 'subjects') {
+                    include 'view-subjects.php';
                 } else {
                     include 'edit-profile.php';
                 }

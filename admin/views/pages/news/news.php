@@ -1,3 +1,4 @@
+<h4> Noticias</h4> <hr />
 <?php
     include_once  $_SERVER["DOCUMENT_ROOT"].'/system/repositories/NewsRepository.php';
     include_once  $_SERVER["DOCUMENT_ROOT"].'/system/utils/UserHelper.php';

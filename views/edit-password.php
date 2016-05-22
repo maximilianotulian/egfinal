@@ -8,7 +8,7 @@
     <form class="col s12 profile--form" method="post" action="/controllers/change.password.php">
         <div class="row profile--form-row">
             <div class="input-field col s12 profile--form-row-element">
-                <input id="old_password" type="text" class="validate" name="old_password1" required="required">
+                <input id="old_password" type="password" class="validate" name="old_password1" required="required">
                 <label for="old_password">Contraseña anterior</label>
             </div>
         </div>
@@ -21,10 +21,9 @@
 
             <div class="input-field col s6 profile--form-row-element">
                 <input id="repeat-password" type="password" class="validate" name="password_repeat" required="required">
-                <label for="repeat-password">Repetir Contraseña</label>
+                <label for="repeat-password">Repetir Contraseña Nueva</label>
             </div>
         </div>
-
         <div class="row profile--form-row">
             <div class="col right">
                 <button class="btn waves-effect waves-light profile--form-row-element-button" type="submit" name="action">

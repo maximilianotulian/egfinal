@@ -24,16 +24,36 @@
         margin: 0;
         padding: 0;
         list-style-type: none;
-        li{
-            .dropdown-button{
-                i{
+        li {
+            .dropdown-button {
+                i {
                     height: 64px;
                     line-height: 64px;
                 }
             }
-            .dropdown-content{
-                min-width: 200px;
+            .dropdown-content {
+                border-radius: 4px;
+                overflow-y: initial;
+                min-width: 250px;
+
+                &-log-in {
+                    height: 340px;
+                    min-width: 400px;
+                }
             }
         }
+    }
+
+    .margin {
+        margin: 10px 20px;
+
+        &-warning {
+            padding: 20px;
+            margin: 5px;
+        }
+    }
+
+    .extra-padding {
+        padding-top: 40px;
     }
 }
