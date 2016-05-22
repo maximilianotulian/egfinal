@@ -3,35 +3,46 @@
         padding: 0 15px;
     }
 }
-.proyect{
+.proyect {
     width: 90%;
-    .logo{
+
+    .logo {
         width: 300px;
         margin: 0 auto;
         display: block;
     }
-    .tecnologies{
+
+    .tecnologies {
         margin-top: 50px;
-        .tecnologie{
+
+        .tecnologie {
             margin: 20px 0px;
-            h5{
+            padding: 10px;
+
+            h5 {
                 text-align: center;
                 margin-bottom: 20px;
             }
+
             .image-wrapper{
                 height: 115px;
-                img{
+
+                img {
                     max-width: 200px;
                     margin: 0 auto;
                     display: block;
-                    &.smaller{
+
+                    &.smaller {
                         max-width: 150px;
                     }
                 }
             }
-            p{
-                text-align: center;
+            p {
+                padding: 30px;
+                text-align: justify;
             }
+
+
         }
     }
 }

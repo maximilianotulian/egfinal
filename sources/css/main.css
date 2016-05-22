@@ -451,9 +451,6 @@ html {
 .footer--list-item {
   color: #cccccc; }
 
-footer.page-footer {
-  margin-top: 150px; }
-
 .notice {
   background-color: #f5f5f5;
   border-radius: 2px;
@@ -686,7 +683,8 @@ footer.page-footer {
   .proyect .tecnologies {
     margin-top: 50px; }
     .proyect .tecnologies .tecnologie {
-      margin: 20px 0px; }
+      margin: 20px 0px;
+      padding: 10px; }
       .proyect .tecnologies .tecnologie h5 {
         text-align: center;
         margin-bottom: 20px; }
@@ -699,7 +697,8 @@ footer.page-footer {
           .proyect .tecnologies .tecnologie .image-wrapper img.smaller {
             max-width: 150px; }
       .proyect .tecnologies .tecnologie p {
-        text-align: center; }
+        padding: 30px;
+        text-align: justify; }
 
 .news--notices {
   width: 90%; }
