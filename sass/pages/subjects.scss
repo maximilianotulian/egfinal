@@ -1,0 +1,28 @@
+.subjects {
+
+    &--wrapper {
+
+    }
+
+    &--title {
+        
+    }
+
+    &--list {
+        margin: 0;
+
+        &-item {
+            display: block;
+            font-weight: 500;
+            padding: 16px 40px;
+            margin: 0;
+            opacity: 87;
+            color: #a4a4a4;
+
+            &:hover {
+                background-color: #00BCD4;
+                color: #37474F;
+            }
+        }
+    }
+}

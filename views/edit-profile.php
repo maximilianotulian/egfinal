@@ -1,9 +1,8 @@
 <div class="row profile--form">
     <div class="col s12">
         <div class="row">
-            <span class="profile--form-title">Perfil</span>
             <form class="col s12 profile--form" method="post" action="/controllers/edit.profile.php">
-
+                <h4 >Perfil</h4>
                 <div class="row profile--form-row">
                     <div class="input-field col s6 profile--form-row-element">
                         <input id="first_name" type="text" class="validate" name="name" disabled value="<?php echo $loggedUser['name']; ?>">

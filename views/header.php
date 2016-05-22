@@ -31,17 +31,19 @@ $loggedUser = UserHelper::getLoggedUser();
             <img src="/sources/photos/Logo_Portal.png" class="header--nav-logo" />
             <ul class="header--nav-list">
                 <li><a href="/home">Inicio</a></li>
+                <li><a href="/subjects">Catedras</a></li>
+                <li><a href="/contact">Contacto</a></li>
                 <li><a href="/news">Noticias</a></li>
                 <li><a href="/us">Sobre Nosotros</a></li>
-                <li><a href="/contact">Contacto</a></li>
+
                 <?php if($loggedUser) {?>
                     <li>
                         <a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="user-dropdown"><?php echo $loggedUser['name'] ?><i class="material-icons right">arrow_drop_down</i></a>
                         <ul id="user-dropdown" class="dropdown-content">
-                            <li><a href="/profile">Perfil</a></li>
                             <?php if (UserHelper::loggedUserHasPermission(Permissions::ADMIN_ACCESS)) { ?>
                                 <li><a href="/admin/">Administración</a></li>
                                 <?php } ?>
+                                <li><a href="/profile">Perfil</a></li>
                                 <li class="divider"></li>
                                 <li><a href="/logout">Salir</a></li>
                             </ul>

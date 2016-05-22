@@ -699,9 +699,6 @@ footer.page-footer {
     .admin--nav-text {
       color: white; }
 
-.account {
-  margin-top: 50px; }
-
 .profile {
   padding: 0;
   margin: 0; }
@@ -712,7 +709,7 @@ footer.page-footer {
   .profile--user {
     background-color: #dedede; }
   .profile .form-wrapper {
-    padding: 30px 20px 0 20px; }
+    padding: 0 20px 0 20px; }
   .profile--form {
     padding-left: 40px; }
     .profile--form-title {
@@ -731,3 +728,16 @@ footer.page-footer {
   .profile .message {
     font-size: 25px;
     padding: 15px 0; }
+
+.subjects--list {
+  margin: 0; }
+  .subjects--list-item {
+    display: block;
+    font-weight: 500;
+    padding: 16px 40px;
+    margin: 0;
+    opacity: 87;
+    color: #a4a4a4; }
+    .subjects--list-item:hover {
+      background-color: #00BCD4;
+      color: #37474F; }
