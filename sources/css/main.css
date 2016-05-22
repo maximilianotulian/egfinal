@@ -438,10 +438,15 @@ html {
       overflow-y: initial;
       min-width: 250px; }
       .header--nav-list li .dropdown-content-log-in {
-        height: 300px;
-        min-width: 360px; }
+        height: 340px;
+        min-width: 400px; }
   .header .margin {
     margin: 10px 20px; }
+    .header .margin-warning {
+      padding: 20px;
+      margin: 5px; }
+  .header .extra-padding {
+    padding-top: 40px; }
 
 .footer--list-item {
   color: #cccccc; }

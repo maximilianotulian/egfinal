@@ -22,11 +22,11 @@
     </div>
 
     <?php if (isset($_GET['bad_login'])) { ?>
-        <p class="warning margin">
-            El usuario o contraseña ingresados son incorrectos. <br>Por favor verificá los datos.
-        </p>
-        <?php } ?>
-        <div class="row">
+        <span class="warning margin-warning">El usuario o contraseña ingresados son incorrectos.</span>
+        <br />
+        <span class="warning margin-warning">Por favor verificá los datos.</span>
+        <?php $newClass=1;} ?>
+        <div class="row <?php echo (isset($newClass) ? null : 'extra-padding'); ?>">
             <div class="col l12">
                 <a class="left btn waves-effect waves-light margin log-in--button" href="account">
                     Registrarme
@@ -36,5 +36,4 @@
                 </button>
             </div>
         </div>
-
 </form>
