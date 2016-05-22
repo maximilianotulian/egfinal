@@ -36,7 +36,7 @@
                     <div class="news--title">
                         <h4>Noticias</h4><hr />
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            En esta sección usted podrá interiorizarse de las noticias y eventos actuales dentro de nuestra Universidad
                         </p>
                     </div>
                 </div>

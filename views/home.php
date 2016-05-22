@@ -49,9 +49,10 @@
                     </h2>
                     <h5 class="center">Mision</h5>
 
-                    <p class="light">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <p class="light justify">
+                        Nuestra Universidad tiene por finalidad la formación de graduados con un alto nivel de competencia profesional,
+                        tanto en el campo del conocimiento como en el de su aplicación instrumental (“Saber y Saber Hacer”).
+                        Se propone formar profesionales sólidos y creativos, capacitados para destacarse en un mundo crecientemente competitivo.
                     </p>
                 </div>
             </div>
@@ -63,9 +64,11 @@
                     </h2>
                     <h5 class="center">Vision</h5>
 
-                    <p class="light">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <p class="light justify">
+                        Somos una institución universitaria que ha alcanzado un respetable posicionamiento en la sociedad y
+                        en el sistema educativo a nivel regional y nacional, incursionando activamente en los procesos de internacionalización
+                        de la educación superior, que se distingue por su carácter innovador, por contar con una organización académica integrada
+                        y flexible.
                     </p>
                 </div>
             </div>
@@ -77,9 +80,11 @@
                     </h2>
                     <h5 class="center">Valores</h5>
 
-                    <p class="light">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <p class="light justify">
+                        La Universidad propone formar graduados respetuosos del valor de la solidaridad y
+                        éticamente comprometidos con el mejoramiento de la calidad de vida y con el desarrollo sostenible del país.
+                        La formulación de principios se encuentra en estrecha vinculación con un núcleo de valores que promueve la institución.
+                        Esos valores reflejan concepciones filosóficas, pedagógicas y éticas que orientan las prácticas institucionales cotidianas.
                     </p>
                 </div>
             </div>

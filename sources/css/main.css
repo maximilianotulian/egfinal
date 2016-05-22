@@ -527,7 +527,7 @@ html {
   .notice--text {
     color: rgba(0, 0, 0, 0.87); }
   .notice--social-media {
-    text-align: right; }
+    padding-left: 40% !important; }
   .notice .description-button-text {
     font-size: 14px;
     position: absolute;
@@ -712,6 +712,9 @@ html {
       .proyect .tecnologies .tecnologie p {
         padding: 30px;
         text-align: justify; }
+
+.justify {
+  text-align: justify; }
 
 .news--notices {
   width: 90%; }
