@@ -23,20 +23,20 @@
                     <div class="col s12 l12">
                         <div class="subject--list-wrapper">
                             <h5>Archivos</h5>
-                            <ul class="subject--list">
-                                <li class="subject--list-item">
+                            <ul class="subject--list collection">
+                                <li class="subject--list-item collection-item">
                                     <a class="black-text" href="#" download>Nombre Archivo</a>
                                     <span class="black-text"> - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                                 </li>
-                                <li class="subject--list-item">
+                                <li class="subject--list-item collection-item">
                                     <a class="black-text" href="#" download>Nombre Archivo</a>
                                     <span class="black-text"> - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                                 </li>
-                                <li class="subject--list-item">
+                                <li class="subject--list-item collection-item">
                                     <a class="black-text" href="#" download>Nombre Archivo</a>
                                     <span class="black-text"> - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                                 </li>
-                                <li class="subject--list-item">
+                                <li class="subject--list-item collection-item">
                                     <a class="black-text" href="#" download>Nombre Archivo</a>
                                     <span class="black-text"> - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                                 </li>

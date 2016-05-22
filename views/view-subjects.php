@@ -2,7 +2,7 @@
     <div class="col s12">
         <div class="row">
             <form class="col s12 profile--form" method="post" enctype="multipart/form-data" action="/controllers/edit.profile.php">
-                <h4>Materias</h4>
+                <h4>Catedras</h4> <hr />
                 <div class="subjects--list-wrapper">
                     <ul class="subjects--list">
                         <li class="subjects--list-item black-text">Catedra 1</li>

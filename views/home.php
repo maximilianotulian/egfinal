@@ -37,80 +37,53 @@
     </div>
 </div>
 
-<div class="proyect container">
-    <div class="section no-padding">
-        <div class="row no-padding">
-            <div class="col s12">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+<div class="container">
+    <div class="section">
+
+        <!--   Icon Section   -->
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center brown-text">
+                        <i class="icon material-icons">flash_on</i>
+                    </h2>
+                    <h5 class="center">Mision</h5>
+
+                    <p class="light">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
             </div>
-            <div class="col s12 tecnologies">
 
-                <div class="row">
-                    <h4 class="center">TECNOLOGÍAS UTILIZADAS</h4>
-                    <div class="row">
-                        <div class="col s4 l4 tecnologie">
-                            <h5>PHP</h5>
-                            <div class="image-wrapper">
-                                <img src="/sources/photos/tecnologies/php.png" alt="PHP " />
-                            </div>
-                            <p>
-                                PHP es un lenguaje de programación de uso general de código del lado del servidor originalmente diseñado para el desarrollo web de contenido dinámico. Fue uno de los primeros lenguajes de programación del lado del servidor.
-                            </p>
-                        </div>
-                        <div class="col s4 l4 tecnologie">
-                            <h5>MYSQL</h5>
-                            <div class="image-wrapper">
-                                <img src="/sources/photos/tecnologies/mysql.png" alt="MYSQL" />
-                            </div>
-                            <p>
-                                MySQL es un sistema de gestión de bases de datos relacional y está considerada como la base datos open source más popular del mundo, sobre todo para entornos de desarrollo web.
-                            </p>
-                        </div>
-                        <div class="col s4 l4 tecnologie">
-                            <h5>SASS</h5>
-                            <div class="image-wrapper">
-                                <img class="smaller" src="/sources/photos/tecnologies/sass.svg" alt="SASS" />
-                            </div>
-                            <p>
-                                Sass es un metalenguaje de Hojas de Estilo en Cascada (CSS). Es un lenguaje de script que es traducido a CSS. Sass proporciona el uso de: variables, nesting (anidamiento), mixins, y herencia de los selectores.
-                            </p>
-                        </div>
-                    </div>
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center brown-text">
+                        <i class="icon material-icons">group</i>
+                    </h2>
+                    <h5 class="center">Vision</h5>
 
-                    <div class="row">
-                        <div class="col s4 l4 tecnologie">
-                            <h5>GIT</h5>
-                            <div class="image-wrapper">
-                                <img src="/sources/photos/tecnologies/git.png" alt="GIT" />
-                            </div>
-                            <p>
-                                Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente
-                            </p>
-                        </div>
-                        <div class="col s4 l4 tecnologie">
-                            <h5>MATERIALIZE CSS</h5>
-                            <div class="image-wrapper">
-                                <img src="/sources/photos/tecnologies/materialize.png" alt="MATERIALIZE" />
-                            </div>
-                            <p>
-                                Materialize CSS es un framework de estilos Material Design. Este estilo de diseño fue creado y diseñado por google que combina los principios clásicos de diseños exitosos junto con innovación y tecnología.
-                            </p>
-                        </div>
-                        <div class="col s4 l4 tecnologie">
-                            <h5>GULP JS</h5>
-                            <div class="image-wrapper">
-                                <img src="/sources/photos/tecnologies/gulp.png" alt="GULP JS" />
-                            </div>
-                            <p>
-                                Gulp JS es un task runner que nos permite realizar tareas varias para facilitar el desarrollo del sitio web. En nuestro caso, lo utilizamos para compilar SASS en CSS.
-                            </p>
-                        </div>
-                    </div>
+                    <p class="light">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
 
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center brown-text">
+                        <i class="icon material-icons">settings</i>
+                    </h2>
+                    <h5 class="center">Valores</h5>
+
+                    <p class="light">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
                 </div>
             </div>
         </div>
+
     </div>
 </div>

@@ -7,7 +7,7 @@
     $loggedUser = UserHelper::getLoggedUser();
 
  ?>
-
+<h4> Archivos</h4> <hr />
 <table>
   <thead>
     <tr>
