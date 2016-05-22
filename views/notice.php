@@ -49,13 +49,6 @@ $comments = $commentRepository->getAllByNew($foundNew['id']);
                                     </span>
                                 </a>
                             </li>
-                            <li class="social-icon--item">
-                                <a class="social-icon--link" href="#" onclick="onIconCLick">
-                                    <span class="genericon genericon-instagram social-icon social-icon_instagram">
-                                        <span class="social-icon--description">Instagram</span>
-                                    </span>
-                                </a>
-                            </li>
                             <li class="social-icon--item" onclick="onIconCLick">
                                 <a class="social-icon--link" href="#">
                                     <span class="genericon genericon-linkedin social-icon social-icon_linkedin">

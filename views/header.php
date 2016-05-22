@@ -33,8 +33,8 @@ $loggedUser = UserHelper::getLoggedUser();
                 <li><a href="/home">Inicio</a></li>
                 <li><a href="/subjects">Catedras</a></li>
                 <li><a href="/contact">Contacto</a></li>
+                <li><a href="/us">Nosotros</a></li>
                 <li><a href="/news">Noticias</a></li>
-                <li><a href="/us">Sobre Nosotros</a></li>
 
                 <?php if($loggedUser) {?>
                     <li>
@@ -50,7 +50,7 @@ $loggedUser = UserHelper::getLoggedUser();
                     </li>
                 <?php } else {?>
                     <li>
-                        <a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="user-dropdown">Iniciar sesión</a>
+                        <a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="user-dropdown">Iniciar sesión / Registrarse</a>
                         <ul id="user-dropdown" class="dropdown-content dropdown-content-log-in header-dropdown">
                             <li>
                                 <?php include 'log-in.php'; ?>
