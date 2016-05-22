@@ -21,38 +21,27 @@
         if (!$foundNew){
             $new = null;
         }
-
     }
-
-
  ?>
 
 <!-- news section -->
 <?php
     if($new === null){
  ?>
-     <!-- banner section -->
-     <div class="news news--baner banner--container">
-         <?php $backgroundName="background2"; ?>
-         <div class="banner" style="background-image: url(<?php echo '/sources/photos/'.$backgroundName.'.jpg'; ?>);" >
-
-             <div class="section">
-                 <div class="container">
-                     <br><br>
-                     <h1 class="banner--title">Portal para entornos educativos</h1>
-                     <div class="row center">
-                         <h5 class="banner--subtitle col s12 light">Noticias</h5>
-                     </div>
-                     <br><br>
-                 </div>
-             </div>
-         </div>
-     </div>
-
      <!-- end banner section -->
     <div class="news--notices container">
         <div class="section">
             <div class="row">
+                <div class="col s12 l6 offset-l3">
+                    <div class="news--title">
+                        <h4>Noticias</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+
+
                 <?php
                     foreach ($news as $key => $new) {
                         if ($new['type']['slug'] == Flags::PRIVATE) {
@@ -69,7 +58,7 @@
                                     <div class="col s12 m4">
                                         <?php include 'new.php'; ?>
                                     </div>
-                                <?php                                
+                                <?php
                             }
                         } else {
                             ?>

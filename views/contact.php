@@ -5,8 +5,12 @@
             <form class="col s12 l8 offset-l2" method="post" action="/controllers/contact.php">
                 <div class="contact--title">
                     <h4>Contacto</h4>
+                    <p>
+                        Si tenés alguna inquietud o consulta escribinos a la siguiente dirección de correo o completá
+                        el formulario y nos pondremos en contacto a la brevedad.
+                    </p>
                 </div>
-                
+
                 <div class="row">
                     <div class="input-field col s6">
                         <input id="first_name" required type="text" class="validate" name="name">
