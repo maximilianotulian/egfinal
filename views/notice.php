@@ -112,7 +112,11 @@ $comments = $commentRepository->getAllByNew($foundNew['id']);
                 <?php foreach ($comments as $key => $comment) {
                     ?>
                     <li class="collection-item avatar">
-                        <i class="material-icons circle">folder</i>
+                        <?php if ($comment['author-image']) { ?>
+                            <img class="image-avatar" src="<?php echo $comment['author-image'] ?>" />
+                        <?php } else { ?>
+                            <img class="mage-avatar" src="/sources/photos/default.png" />
+                        <?php } ?>
                         <span class="title"><?php echo $comment['author']?> - <?php echo DateHelper::formatDateES($comment['created_at']) ?></span>
                         <p><?php echo $comment['comment'] ?></p>
                     </li>

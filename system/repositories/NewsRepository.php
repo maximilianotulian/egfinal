@@ -18,7 +18,7 @@
         }
 
         function setAuthor($new){
-            $query_string = 'SELECT u.name, u.lastname FROM users u
+            $query_string = 'SELECT u.name, u.lastname, u.photo FROM users u
                              INNER JOIN news n on n.id_user = u.id
                              WHERE n.id = ?';
             $getNew = array(
@@ -27,6 +27,7 @@
 
             $author = $this->executePrepareStatement($query_string, $getNew)[0];
             $new['author'] = $author['name'].' '.$author['lastname'];
+            $new['author-image'] = $author['photo'];
             return $new;
         }
 

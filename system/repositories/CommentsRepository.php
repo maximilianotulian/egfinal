@@ -18,7 +18,7 @@
         }
 
         function setAuthor($comment){
-            $query_string = 'SELECT u.name, u.lastname FROM users u
+            $query_string = 'SELECT u.name, u.lastname, u.photo FROM users u
                              INNER JOIN comments c on c.id_user = u.id
                              WHERE c.id = ?';
             $getNew = array(
@@ -27,6 +27,7 @@
 
             $author = $this->executePrepareStatement($query_string, $getNew)[0];
             $comment['author'] = $author['name'].' '.$author['lastname'];
+            $comment['author-image'] = $author['photo'];
             return $comment;
         }
 

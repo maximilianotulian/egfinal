@@ -21,8 +21,11 @@
 
         <span class="author-wrapper">
             <a class"author-wrapper--image">
-                <?php $avatar = isset($new['avatar']) ? $new['avatar'] : "sources/photos/default.png";?>
-                <img class="author-wrapper--image-avatar" src="<?php echo $avatar ?>" />
+                <?php if ($new['author-image']) { ?>
+                    <img class="author-wrapper--image-avatar" src="<?php echo $new['author-image'] ?>" />
+                <?php } else { ?>
+                    <img class="author-wrapper--image-avatar" src="/sources/photos/default.png" />
+                <?php } ?>
             </a>
             <a class="author-wrapper--text"><?php echo $new['author'] ?></a>
         </span>
