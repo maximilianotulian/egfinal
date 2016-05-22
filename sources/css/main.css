@@ -434,7 +434,9 @@ html {
       height: 64px;
       line-height: 64px; }
     .header--nav-list li .dropdown-content {
-      min-width: 200px; }
+      min-width: 350px; }
+  .header .margin {
+    margin: 20px; }
 
 .footer--list-item {
   color: #cccccc; }

@@ -41,16 +41,23 @@ $loggedUser = UserHelper::getLoggedUser();
                         <a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="user-dropdown"><?php echo $loggedUser['name'] ?><i class="material-icons right">arrow_drop_down</i></a>
                         <ul id="user-dropdown" class="dropdown-content">
                             <?php if (UserHelper::loggedUserHasPermission(Permissions::ADMIN_ACCESS)) { ?>
-                                <li><a href="/admin/">Administración</a></li>
-                                <?php } ?>
-                                <li><a href="/profile">Perfil</a></li>
-                                <li class="divider"></li>
-                                <li><a href="/logout">Salir</a></li>
-                            </ul>
-                        </li>
-                        <?php } else {?>
-                            <li><a href="/account">Ingresar / Registro</a></li>
+                            <li><a href="/admin/">Administración</a></li>
                             <?php } ?>
+                            <li><a href="/profile">Perfil</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/logout">Salir</a></li>
                         </ul>
-                    </div>
-                </nav>
+                    </li>
+                <?php } else {?>
+                    <li>
+                        <a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="user-dropdown">Iniciar sesión</a>
+                        <ul id="user-dropdown" class="dropdown-content header-dropdown">
+                            <li>
+                                <?php include 'log-in.php'; ?>
+                            </li>
+                        </ul>
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>
+    </nav>
