@@ -19,7 +19,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="input-field col s12">
+                    <div class="input-field col s12 l6">
                         <input id="username" type="text" class="validate" name="username" required="required">
                         <label for="username">Nombre de usuario</label>
                     </div>
@@ -28,6 +28,15 @@
                             El nombre de usuario ya está en uso.
                         </p>
                         <?php } ?>
+                        <div class="input-field col s12 l6">
+                            <input id="email" type="email" class="validate" name="email" required="required">
+                            <label for="email">Email</label>
+                        </div>
+                        <?php if (isset($_GET['email_exist'])) {?>
+                            <p class="warning">
+                                El email ya está en uso.
+                            </p>
+                            <?php } ?>
                 </div>
 
                 <div class="row">
@@ -43,15 +52,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="input-field col s12">
-                        <input id="email" type="email" class="validate" name="email" required="required">
-                        <label for="email">Email</label>
-                    </div>
-                    <?php if (isset($_GET['email_exist'])) {?>
-                        <p class="warning">
-                            El email ya está en uso.
-                        </p>
-                        <?php } ?>
+
                 </div>
 
                 <button class="right btn waves-effect waves-light" type="submit" name="action">
