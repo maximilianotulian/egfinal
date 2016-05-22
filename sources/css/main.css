@@ -436,8 +436,10 @@ html {
     .header--nav-list li .dropdown-content {
       border-radius: 4px;
       overflow-y: initial;
-      min-height: 360px;
-      min-width: 360px; }
+      min-width: 250px; }
+      .header--nav-list li .dropdown-content-log-in {
+        min-height: 360px;
+        min-width: 360px; }
   .header .margin {
     margin: 20px; }
 

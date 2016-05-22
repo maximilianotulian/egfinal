@@ -51,7 +51,7 @@ $loggedUser = UserHelper::getLoggedUser();
                 <?php } else {?>
                     <li>
                         <a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="user-dropdown">Iniciar sesión</a>
-                        <ul id="user-dropdown" class="dropdown-content header-dropdown">
+                        <ul id="user-dropdown" class="dropdown-content dropdown-content-log-in header-dropdown">
                             <li>
                                 <?php include 'log-in.php'; ?>
                             </li>
