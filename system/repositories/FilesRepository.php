@@ -34,7 +34,7 @@
         }
 
         function setSubject($file){
-            $query_string = 'SELECT s.description FROM subjects s
+            $query_string = 'SELECT s.title FROM subjects s
                              INNER JOIN files f on f.id_subject = s.id
                              WHERE f.id = ?';
             $getFile = array(
@@ -42,8 +42,20 @@
             );
 
             $subject = $this->executePrepareStatement($query_string, $getFile)[0];
-            $file['subject'] = $subject['description'];
+            $file['subject'] = $subject['title'];
             return $file;
+        }
+
+        function getAllBySubject($subject_id){
+            $query_string = 'SELECT * FROM files WHERE id_subject = ?';
+            $subject = array(
+                'id_subject' => $subject_id
+            );
+            $files = $this->executePrepareStatement($query_string, $subject);
+            foreach ($files as &$file) {
+                $file = $this->setAuthor($file);
+            }
+            return $files;
         }
 
     }

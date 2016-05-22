@@ -185,9 +185,9 @@
             $userRepository->setUserRole($userId, $roleId);
         }
 
-        public static function userHasSubject($user_id, $subject_id){
+        public static function userHasSubject($user_id, $subject_id, $active = false){
             $userRepository = new UserRepository();
-            return $userRepository->userHasSubject($user_id, $subject_id);
+            return $userRepository->userHasSubject($user_id, $subject_id, $active);
         }
 
         public static function updateLoggedUser(){

@@ -29,13 +29,7 @@
         }
 
         function getTeachers($subject_id){
-             $query_string = 'SELECT u.id, u.name, u.lastname FROM users u
-                             INNER JOIN user_subject us ON us.id_user = u.id
-                             WHERE us.id_subject = ?';
-             $searchElement = array(
-                 'id_subject' => $subject_id
-             );
-             return $this->executePrepareStatement($query_string, $searchElement);
+            return $this->getMembers($subject_id, 2);
         }
 
         function getSubjectsByTeacher($teacher_id){
@@ -56,6 +50,21 @@
              'id_user' => $student_id
             );
 
+            return $this->executePrepareStatement($query_string, $searchElement);
+        }
+
+        function getStudents($subject_id){
+            return $this->getMembers($subject_id, 3);
+        }
+
+        function getMembers($subject_id, $role){
+            $query_string = 'SELECT u.id, u.name, u.lastname, us.active FROM users u
+                            INNER JOIN user_subject us ON us.id_user = u.id
+                            INNER JOIN user_role ur ON ur.id_user = u.id
+                            WHERE us.id_subject = ? AND ur.id_role = '.$role;
+            $searchElement = array(
+                'id_subject' => $subject_id
+            );
             return $this->executePrepareStatement($query_string, $searchElement);
         }
 

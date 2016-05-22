@@ -46,8 +46,10 @@
         if (isset($file) && $file != 0){
             $editFile['id'] = $file;
             $fileRepository->update($editFile);
+            header('Location: /admin/files');
         }else{
             $fileRepository->add($editFile);
+            header('Location: /admin/files');
         }
 
     }
@@ -83,7 +85,7 @@
                   <select class="teacher-selector" name="id_subject">
                     <option value="" disabled selected>Materia</option>
                     <?php foreach ($subjects as $key => $subject) {?>
-                        <option value="<?php echo $subject['id'] ?>"><?php echo $subject['description'];?></option>
+                        <option value="<?php echo $subject['id'] ?>"><?php echo $subject['title'];?></option>
                     <?php }?>
                   </select>
                   <label>Materia</label>

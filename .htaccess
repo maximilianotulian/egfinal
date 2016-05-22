@@ -24,5 +24,7 @@
 
     RewriteRule ^news/([0-9]+)$  index.php?pagina=news&new_id=$1 [L]
 
+	RewriteRule ^subjects/([0-9]+)$  index.php?pagina=subjects&subject_id=$1 [L]
+
 
 </ifModule>

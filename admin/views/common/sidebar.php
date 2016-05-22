@@ -23,7 +23,7 @@
     <?php } ?>
     <?php if (UserHelper::loggedUserHasPermission(Permissions::LIST_SUBJECTS)){ ?>
         <ul class="options--list">
-            <li><a class="options--list-item" href="/admin/subjects">Catedras</a></li>
+            <li><a class="options--list-item" href="/admin/subjects">Cátedras</a></li>
         </ul>
     <?php } ?>
     <?php if (UserHelper::loggedUserHasPermission(Permissions::LIST_FILES)){ ?>

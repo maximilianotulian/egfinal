@@ -99,7 +99,7 @@
                     <?php
                         foreach ($subjects as $key => $subject) {
                             ?>
-                                <option <?php if (isset($editNew['id_subject']) && $editNew['id_subject'] === $subject['id']) echo 'selected="selected"'; ?> value="<?php echo $subject['id']; ?>"><?php echo $subject['description']; ?></option>
+                                <option <?php if (isset($editNew['id_subject']) && $editNew['id_subject'] === $subject['id']) echo 'selected="selected"'; ?> value="<?php echo $subject['id']; ?>"><?php echo $subject['title']; ?></option>
                             <?php
                         }
                      ?>

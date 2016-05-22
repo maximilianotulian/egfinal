@@ -31,7 +31,9 @@ $loggedUser = UserHelper::getLoggedUser();
             <img src="/sources/photos/Logo_Portal.png" class="header--nav-logo" />
             <ul class="header--nav-list">
                 <li><a href="/home">Inicio</a></li>
-                <li><a href="/subjects">Catedras</a></li>
+                <?php if($loggedUser) { ?>
+                    <li><a href="/subjects">Catedras</a></li>
+                <?php } ?>
                 <li><a href="/contact">Contacto</a></li>
                 <li><a href="/us">Nosotros</a></li>
                 <li><a href="/news">Noticias</a></li>

@@ -122,6 +122,15 @@
             return $this->asignUserToSubject($newAsignation);
         }
 
+        function asignStudentToSubject($student_id, $subject_id){
+            $newAsignation = array(
+                'id_user' => $student_id,
+                'id_subject' => $subject_id,
+                'active' => 0
+            );
+            return $this->asignUserToSubject($newAsignation);
+        }
+
         function removeUserFromSubject($id_user, $subject_id){
             $query_string = 'DELETE FROM user_subject
                              WHERE id_user = ?
@@ -133,7 +142,7 @@
             return $this->executePrepareStatement($query_string, $deleteElement, $noResults = true);
         }
 
-        function userHasSubject($user_id, $subject_id){
+        function userHasSubject($user_id, $subject_id, $active = false){
             $query_string = 'SELECT * FROM user_subject
                              WHERE id_user = ?
                              AND id_subject = ?';
@@ -141,11 +150,26 @@
                 'id_user' => $user_id,
                 'id_subject' => $subject_id
             );
+            if($active){
+                $query_string .= ' AND active';
+            }
             if ($this->executePrepareStatement($query_string, $searchElement)){
                 return true;
             } else {
                 return false;
             }
+        }
+
+        function activeStudent($student_id, $subject_id){
+            $query_string = 'UPDATE user_subject
+                             SET active=1
+                             WHERE id_user = ? AND id_subject = ?';
+            $updatedElement = array(
+                'id_user' => $student_id,
+                'id_subject' => $subject_id
+            );
+
+            return $this->executePrepareStatement($query_string, $updatedElement, $noResults = true);
         }
 
     }
