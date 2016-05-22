@@ -434,7 +434,10 @@ html {
       height: 64px;
       line-height: 64px; }
     .header--nav-list li .dropdown-content {
-      min-width: 350px; }
+      border-radius: 4px;
+      overflow-y: initial;
+      min-height: 360px;
+      min-width: 360px; }
   .header .margin {
     margin: 20px; }
 
@@ -756,3 +759,6 @@ footer.page-footer {
     .subject--list-item:hover {
       background-color: #00BCD4;
       color: #37474F; }
+
+.log-in--button {
+  padding: 0 1rem; }
