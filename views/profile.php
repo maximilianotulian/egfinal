@@ -17,7 +17,11 @@
                     <div class="row profile--user">
                         <div class="col s12">
                             <div class="user">
-                                <img class="user--avatar" src="/sources/photos/default.png" />
+                                <?php if ($loggedUser['photo']) { ?>
+                                    <img class="user--avatar" src="<?php echo $loggedUser['photo'] ?>" />
+                                <?php } else { ?>
+                                    <img class="user--avatar" src="/sources/photos/default.png" />
+                                <?php } ?>
                                 <a class="user--avatar-text black-text"><?php echo $loggedUser['name'] ?></a>
                             </div>
                         </div>

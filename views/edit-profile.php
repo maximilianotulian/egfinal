@@ -1,7 +1,7 @@
 <div class="row profile--form">
     <div class="col s12">
         <div class="row">
-            <form class="col s12 profile--form" method="post" action="/controllers/edit.profile.php">
+            <form class="col s12 profile--form" method="post" enctype="multipart/form-data" action="/controllers/edit.profile.php">
                 <h4 >Perfil</h4>
                 <div class="row profile--form-row">
                     <div class="input-field col s6 profile--form-row-element">
