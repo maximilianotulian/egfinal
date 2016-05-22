@@ -30,3 +30,19 @@
 
 </body>
 </html>
+
+<?php if (isset($_GET['success'])) { ?>
+    <?php if($_GET['success'] === 'true') {?>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                Materialize.toast('<?php echo $message_success; ?>', 4000);
+            });
+        </script>
+    <?php } else { ?>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                Materialize.toast('<?php echo $message_error; ?>', 4000);
+            })
+        </script>
+    <?php } ?>
+<?php } ?>

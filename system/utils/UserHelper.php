@@ -198,6 +198,15 @@
             self::storeUserInSession($updatedUser);
         }
 
+        public static function changePassword($user){
+            $cleanPassword = $user['password'];
+            $user['password'] = self::hash($user['password']);
+            $userRepository = new UserRepository();
+            $userRepository->update($user);
+            $user['password'] = $cleanPassword;
+            self::login($user);
+        }
+
     }
 
  ?>
