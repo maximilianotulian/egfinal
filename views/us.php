@@ -22,7 +22,11 @@
             <div class="col s12">
                 <h4 class="center">Sobre el proyecto</h4><hr />
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Pretendemos llevar la puesta en marcha de un sitio adaptado para el funcionamientos
+                    de diferente de tipos de entornos educacionales. La idea se centra en el ámbito universitario,
+                    intentado aplicar mejoras teniendo en cuenta nuestras experiencias durante el período académico
+                    el cual transitamos, ubicando como mayor dificultad la falta de centralización de información
+                    y archivos, como también en la comunicación entre docente/alumnos y viceversa.
                 </p>
             </div>
             <div class="col s12 tecnologies">

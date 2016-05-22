@@ -37,7 +37,8 @@ $comments = $commentRepository->getAllByNew($foundNew['id']);
 
                         <ul class="notice--social-media col s12 m8">
                             <li class="social-icon--item">
-                                <a class="social-icon--link"  onclick="onIconCLick(this.href);" href="https://www.youtube.com/watch?v=F-7OFftB43w">
+                                <?php <?php $pagina_actual = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";?>?>
+                                <a class="social-icon--link" onclick="javascript:window.open(<?php echo $pagina_actual;?>, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
                                     <span class="genericon genericon-facebook social-icon social-icon_facebook">
                                         <span class="social-icon--description">Facebook</span>
                                     </span>

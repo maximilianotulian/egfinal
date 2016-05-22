@@ -713,6 +713,9 @@ html {
         padding: 30px;
         text-align: justify; }
 
+.justify {
+  text-align: justify; }
+
 .news--notices {
   width: 90%; }
 
