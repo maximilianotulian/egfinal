@@ -37,29 +37,36 @@ $comments = $commentRepository->getAllByNew($foundNew['id']);
 
                         <ul class="notice--social-media col s12 m8">
                             <li class="social-icon--item">
-                                <?php <?php $pagina_actual = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";?>?>
-                                <a class="social-icon--link" onclick="javascript:window.open(<?php echo $pagina_actual;?>, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                                <?php $pagina_actual = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";?>
+
+                                <a class="social-icon--link" onclick="javascript:window.open(this.href, '',
+                                'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+                                href="https://facebook.com/sharer/sharer.php?u=<?php echo $pagina_actual; ?>">
+
                                     <span class="genericon genericon-facebook social-icon social-icon_facebook">
                                         <span class="social-icon--description">Facebook</span>
                                     </span>
                                 </a>
                             </li>
+
                             <li class="social-icon--item">
-                                <a class="social-icon--link" href="#" onclick="onIconCLick">
+
+                                <a class="social-icon--link" onclick="javascript:window.open(this.href,
+                                '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+                                href="http://twitter.com/home?status=News News: <?php echo $pagina_actual; ?>">
+
                                     <span class="genericon genericon-twitter social-icon social-icon_twitter">
                                         <span class="social-icon--description">Twitter</span>
                                     </span>
                                 </a>
                             </li>
-                            <li class="social-icon--item" onclick="onIconCLick">
-                                <a class="social-icon--link" href="#">
-                                    <span class="genericon genericon-linkedin social-icon social-icon_linkedin">
-                                        <span class="social-icon--description">Linkedin</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="social-icon--item" onclick="onIconCLick">
-                                <a class="social-icon--link" href="#">
+
+                            <li class="social-icon--item">
+
+                                <a class="social-icon--link" onclick="javascript:window.open(this.href, '',
+                                'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+                                href="https://plus.google.com/share?url=<?php echo $pagina_actual; ?>">
+
                                     <span class="genericon genericon-googleplus social-icon social-icon_google-plus">
                                         <span class="social-icon--description">Google Plus</span>
                                     </span>
