@@ -14,9 +14,9 @@
                     <span class="col s12 l9">
                         Para acceder al contenido debe estar registrado en la catedra
                     </span>
-                    <button class="col s12 l3 right btn waves-effect waves-light margin" type="submit" name="action">
+                    <a class="col s12 l3 right btn waves-effect waves-light margin" href="#">
                         registrarme
-                    </button>
+                    </a>
                 </div>
 
                 <div class="row">
