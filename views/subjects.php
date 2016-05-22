@@ -13,11 +13,11 @@
 
                     <div class="subjects--list-wrapper">
                         <ul class="subjects--list">
-                            <li class="subjects--list-item"><a class="black-text">Catedra 1</a></li>
-                            <li class="subjects--list-item"><a class="black-text">Catedra 2</a></li>
-                            <li class="subjects--list-item"><a class="black-text">Catedra 3</a></li>
-                            <li class="subjects--list-item"><a class="black-text">Catedra 4</a></li>
-                            <li class="subjects--list-item"><a class="black-text">Catedra 5</a></li>
+                            <li class="subjects--list-item"><a class="black-text" href="subject">Catedra 1</a></li>
+                            <li class="subjects--list-item"><a class="black-text" href="subject">Catedra 2</a></li>
+                            <li class="subjects--list-item"><a class="black-text" href="subject">Catedra 3</a></li>
+                            <li class="subjects--list-item"><a class="black-text" href="subject">Catedra 4</a></li>
+                            <li class="subjects--list-item"><a class="black-text" href="subject">Catedra 5</a></li>
                         </ul>
                     </div>
 
