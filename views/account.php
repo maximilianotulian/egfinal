@@ -50,11 +50,7 @@
                         <label for="repeat-password">Repetir Contraseña</label>
                     </div>
                 </div>
-
-                <div class="row">
-
-                </div>
-
+                
                 <button class="right btn waves-effect waves-light" type="submit" name="action">
                     Registrarse
                 </button>
