@@ -1,3 +1,7 @@
+<?php
+    $message_success = 'Perfil actualizado correctamente';
+ ?>
+
 <div class="row profile--form">
     <div class="col s12">
         <div class="row">

@@ -13,7 +13,11 @@
 
 	RewriteRule profile/password$ index.php?pagina=profile&action=password [L,QSA]
 
+	RewriteRule profile/?$ index.php?pagina=profile [L,QSA]
+
 	RewriteRule ^profile/([a-zA-Z]+)$  index.php?pagina=profile&action=$1 [L,QSA]
+
+
 
     RewriteRule ^([a-zA-Z]+)$  index.php?pagina=$1 [L]
     RewriteRule ^([a-zA-Z]+)/$ index.php?pagina=$1 [L]

@@ -38,7 +38,7 @@
                 Materialize.toast('<?php echo $message_success; ?>', 4000);
             });
         </script>
-    <?php } else { ?>
+    <?php } else { print_r('asf');?>
         <script type="text/javascript">
             $(document).ready(function(){
                 Materialize.toast('<?php echo $message_error; ?>', 4000);

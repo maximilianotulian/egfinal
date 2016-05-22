@@ -27,6 +27,6 @@
 
     $userRepository->update($updatedUser);
     UserHelper::updateLoggedUser();
-    header('Location: /profile/');
+    header('Location: /profile/?success=true');
 
  ?>
