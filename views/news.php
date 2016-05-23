@@ -44,7 +44,7 @@
 
                 <?php
                     foreach ($news as $key => $new) {
-                        if ($new['type']['slug'] == Flags::PRIVATE) {
+                        if ($new['type']['slug'] == Flags::PRIVATE_NEWS) {
                             if($loggedUser){
                                 ?>
                                     <div class="col s12 m4">
