@@ -1,6 +1,4 @@
 .phpintel
-node_modules/*
-bower_components/*
 uploads/files/*
 uploads/news/*
 uploads/profile/*
