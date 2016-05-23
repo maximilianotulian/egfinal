@@ -4,3 +4,4 @@ uploads/news/*
 uploads/profile/*
 uploads/users/*
 sources/css/main.css
+node_modules
