@@ -1,0 +1,22 @@
+
+<ifModule mod_rewrite.c>
+	Options +FollowSymLinks
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteRule ^([a-zA-Z]+)$  /admin/index.php?pagina=$1 [L]
+    RewriteRule ^([a-zA-Z]+)/$ /admin/index.php?pagina=$1 [L]
+
+    RewriteRule ^news/([0-9]+)$  /admin/index.php?pagina=news&new=$1 [L]
+    RewriteRule ^news/delete/([0-9]+)$  /admin/index.php?pagina=news&new=$1&action=true [L]
+
+	RewriteRule ^subjects/([0-9]+)$  /admin/index.php?pagina=subjects&subject=$1 [L]
+    RewriteRule ^subjects/delete/([0-9]+)$  /admin/index.php?pagina=subjects&subject=$1&action=true [L]
+
+	RewriteRule ^files/([0-9]+)$  /admin/index.php?pagina=files&file=$1 [L]
+    RewriteRule ^files/delete/([0-9]+)$  /admin/index.php?pagina=files&file=$1&action=true [L]
+
+    RewriteRule ^users/([0-9]+)$  /admin/index.php?pagina=users&user=$1 [L]
+    RewriteRule ^users/delete/([0-9]+)$  /admin/index.php?pagina=users&user=$1&action=true [L]
+
+</ifModule>

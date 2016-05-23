@@ -1,0 +1,30 @@
+<ifModule mod_rewrite.c>
+	Options +FollowSymLinks
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteRule ^admin - [L]
+
+	RewriteRule ^logout /controllers/logout.php [L]
+
+	RewriteRule ^account/bad_login index.php?pagina=account&bad_login=true [L]
+
+	RewriteRule account/register$ index.php?pagina=account [L,QSA]
+
+	RewriteRule profile/password$ index.php?pagina=profile&action=password [L,QSA]
+
+	RewriteRule profile/?$ index.php?pagina=profile [L,QSA]
+
+	RewriteRule ^profile/([a-zA-Z]+)$  index.php?pagina=profile&action=$1 [L,QSA]
+
+
+
+    RewriteRule ^([a-zA-Z]+)$  index.php?pagina=$1 [L]
+    RewriteRule ^([a-zA-Z]+)/$ index.php?pagina=$1 [L]
+
+    RewriteRule ^news/([0-9]+)$  index.php?pagina=news&new_id=$1 [L]
+
+	RewriteRule ^subjects/([0-9]+)$  index.php?pagina=subjects&subject_id=$1 [L]
+
+
+</ifModule>

@@ -1,2 +1,8 @@
 .phpintel
 node_modules/*
+bower_components/*
+uploads/files/*
+uploads/news/*
+uploads/profile/*
+uploads/users/*
+sources/css/main.css
