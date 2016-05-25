@@ -37,7 +37,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="news--notices container">
     <div class="section">
 
         <!--   Icon Section   -->
