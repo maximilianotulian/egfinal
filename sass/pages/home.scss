@@ -2,6 +2,12 @@
     &--icon {
         padding: 0 15px;
     }
+
+    &--block {
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+        min-height: 480px;
+        padding: 20px;
+    }
 }
 .proyect {
     width: 90%;
