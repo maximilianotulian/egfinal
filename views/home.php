@@ -22,7 +22,7 @@
 </div>
 
 <div class="news--notices container">
-    <div class="section">
+    <div class="section no-padding">
         <div class="row">
             <?php
                 foreach ($news as $key => $new) {
@@ -37,13 +37,13 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="section">
+<div class="news--notices container no-padding">
+    <div class="section no-padding">
 
         <!--   Icon Section   -->
         <div class="row">
             <div class="col s12 m4">
-                <div class="icon-block">
+                <div class="icon-block home--block shadow">
                     <h2 class="center brown-text">
                         <i class="icon material-icons">flash_on</i>
                     </h2>
@@ -51,14 +51,14 @@
 
                     <p class="light justify">
                         Nuestra Universidad tiene por finalidad la formación de graduados con un alto nivel de competencia profesional,
-                        tanto en el campo del conocimiento como en el de su aplicación instrumental (“Saber y Saber Hacer”).
+                        tanto en el campo del conocimiento como en el de su aplicación instrumental.
                         Se propone formar profesionales sólidos y creativos, capacitados para destacarse en un mundo crecientemente competitivo.
                     </p>
                 </div>
             </div>
 
             <div class="col s12 m4">
-                <div class="icon-block">
+                <div class="icon-block home--block shadow">
                     <h2 class="center brown-text">
                         <i class="icon material-icons">group</i>
                     </h2>
@@ -67,14 +67,13 @@
                     <p class="light justify">
                         Somos una institución universitaria que ha alcanzado un respetable posicionamiento en la sociedad y
                         en el sistema educativo a nivel regional y nacional, incursionando activamente en los procesos de internacionalización
-                        de la educación superior, que se distingue por su carácter innovador, por contar con una organización académica integrada
-                        y flexible.
+                        de la educación superior, que se distingue por su carácter innovador y flexible.
                     </p>
                 </div>
             </div>
 
             <div class="col s12 m4">
-                <div class="icon-block">
+                <div class="icon-block home--block shadow">
                     <h2 class="center brown-text">
                         <i class="icon material-icons">settings</i>
                     </h2>
@@ -84,7 +83,6 @@
                         La Universidad propone formar graduados respetuosos del valor de la solidaridad y
                         éticamente comprometidos con el mejoramiento de la calidad de vida y con el desarrollo sostenible del país.
                         La formulación de principios se encuentra en estrecha vinculación con un núcleo de valores que promueve la institución.
-                        Esos valores reflejan concepciones filosóficas, pedagógicas y éticas que orientan las prácticas institucionales cotidianas.
                     </p>
                 </div>
             </div>
