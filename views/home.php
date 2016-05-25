@@ -22,7 +22,7 @@
 </div>
 
 <div class="news--notices container">
-    <div class="section">
+    <div class="section no-padding">
         <div class="row">
             <?php
                 foreach ($news as $key => $new) {
@@ -37,13 +37,13 @@
     </div>
 </div>
 
-<div class="news--notices container">
-    <div class="section">
+<div class="news--notices container no-padding">
+    <div class="section no-padding">
 
         <!--   Icon Section   -->
         <div class="row">
             <div class="col s12 m4">
-                <div class="icon-block home--block">
+                <div class="icon-block home--block shadow">
                     <h2 class="center brown-text">
                         <i class="icon material-icons">flash_on</i>
                     </h2>
@@ -58,7 +58,7 @@
             </div>
 
             <div class="col s12 m4">
-                <div class="icon-block home--block">
+                <div class="icon-block home--block shadow">
                     <h2 class="center brown-text">
                         <i class="icon material-icons">group</i>
                     </h2>
@@ -73,7 +73,7 @@
             </div>
 
             <div class="col s12 m4">
-                <div class="icon-block home--block">
+                <div class="icon-block home--block shadow">
                     <h2 class="center brown-text">
                         <i class="icon material-icons">settings</i>
                     </h2>
