@@ -2,7 +2,7 @@ var regexEmail = /^(([a-zA-Z0-9])|([-]|[_]|[.]))+[@]([a-zA-Z0-9]){2,63}[.](([a-z
 var regexOnlyNumber =/^[0-9]+$/;
 var regexOnlyText = /^[a-zA-Z]+$/;
 
-//Al menos seis caracteres, una minúscula, una mayuscula y un número.
+//For the password is required at least six characters, a minus, a mayus and a number.
 var regexPassword = /^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$/;
 
 var isEqual = function (field1, field2) {
@@ -30,5 +30,5 @@ var validatePassWord = function (field) {
 };
 
 var validateContactSubmit = function () {
-    
+
 };
