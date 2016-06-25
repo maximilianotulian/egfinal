@@ -21,6 +21,12 @@ $loggedUser = UserHelper::getLoggedUser();
                         <?php if($loggedUser) { ?>
                         <li><a class="footer--list-item" href="/subjects">Catedras</a></li>
                         <?php } ?>
+                        <li>
+                            <a class="footer--list-item" href="/home">Inicio</a>
+                            <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fportaleducativo.tigrimigri.com%2F">
+                                Validación W3C.
+                            </a>
+                        </li>
                         <li><a class="footer--list-item" href="/contact">Contacto</a></li>
                         <li><a class="footer--list-item" href="/us">Nosotros</a></li>
                         <li><a class="footer--list-item" href="/news">Noticias</a></li>
