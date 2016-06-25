@@ -4,14 +4,14 @@
 
     Use \App\System\Helpers\UserHelper as UserHelper;
 
-    if ( !isset($_POST['username']) && !isset($_POST['password']) ){
+    if ( !isset($_POST['username-modal']) && !isset($_POST['password-modal']) ){
         header('Location: /account/bad_login');
         die();
     }
-    
+
     $user = array(
-        'username' => $_POST['username'],
-        'password' => $_POST['password']
+        'username' => $_POST['username-modal'],
+        'password' => $_POST['password-modal']
     );
 
     if(isset($_POST['remember_me']) && $_POST['remember_me'] == "true"){

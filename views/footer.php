@@ -23,14 +23,34 @@ $loggedUser = UserHelper::getLoggedUser();
                         <?php } ?>
                         <li>
                             <a class="footer--list-item" href="/home">Inicio</a>
-                            <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fportaleducativo.tigrimigri.com%2F">
-                                Validación W3C.
+                            <a class="footer--list-item" href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fportaleducativo.tigrimigri.com%2F">
+                                - Validación W3C.
                             </a>
                         </li>
-                        <li><a class="footer--list-item" href="/contact">Contacto</a></li>
-                        <li><a class="footer--list-item" href="/us">Nosotros</a></li>
-                        <li><a class="footer--list-item" href="/news">Noticias</a></li>
-                        <li><a class="footer--list-item" href="/account">Registrar</a></li>
+                        <li>
+                            <a class="footer--list-item" href="/contact">Contacto</a>
+                            <a class="footer--list-item" href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fportaleducativo.tigrimigri.com%2Fcontact">
+                                - Validación W3C.
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer--list-item" href="/us">Nosotros</a>
+                            <a class="footer--list-item" href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fportaleducativo.tigrimigri.com%2Fus">
+                                - Validación W3C.
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer--list-item" href="/news">Noticias</a>
+                            <a class="footer--list-item" href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fportaleducativo.tigrimigri.com%2Fnews">
+                                - Validación W3C.
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer--list-item" href="/account">Registrar</a>
+                            <a class="footer--list-item" href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fportaleducativo.tigrimigri.com%2Fhome%23login-modal">
+                                - Validación W3C.
+                            </a>
+                        </li>
                         <li><a class="footer--list-item modal-trigger" href="#login-modal">Ingresar</a></li>
                     </ul>
                 </div>
