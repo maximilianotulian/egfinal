@@ -20,9 +20,9 @@
         </a>
 
         <span class="author-wrapper">
-            <a class="author-wrapper--image">
+            <a class"author-wrapper--image">
                 <?php if ($new['author-image']) { ?>
-                    <img class="author-wrapper--image-avatar" src="<?php echo $new['author-image'] ?>" alt="<?php echo $new['author'] ?>"/>
+                    <img class="author-wrapper--image-avatar" src="<?php echo $new['author-image'] ?>" />
                 <?php } else { ?>
                     <img class="author-wrapper--image-avatar" src="/sources/photos/default.png" />
                 <?php } ?>

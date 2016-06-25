@@ -20,15 +20,15 @@ $loggedUser = UserHelper::getLoggedUser();
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="/sources/genericons/genericons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <link href="/sources/genericons/genericons.css" type="text/css" rel="stylesheet" media="screen"/>
-    <link href="/sources/css/style.css" type="text/css" rel="stylesheet" media="screen"/>
-    <link href="/sources/css/main.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="/sources/genericons/genericons.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/sources/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/sources/css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
 </head>
 <body>
-    <nav class="header">
+    <nav class="header" role="navigation">
         <div class="header--nav-wrapper container">
-            <img src="/sources/photos/Logo_Portal.png" class="header--nav-logo" alt="Portal de Entornos Educativos - Logo"/>
+            <img src="/sources/photos/Logo_Portal.png" class="header--nav-logo" />
             <ul class="header--nav-list">
                 <li><a href="/home">Inicio</a></li>
                 <?php if($loggedUser) { ?>
