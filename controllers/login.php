@@ -8,7 +8,7 @@
         header('Location: /account/bad_login');
         die();
     }
-    
+
     $user = array(
         'username' => $_POST['username'],
         'password' => $_POST['password']
