@@ -3,15 +3,15 @@
         <div class="modal-content">
             <div class="row margin">
                 <div class="col l12">
-                    <label for="username">Usuario</label>
-                    <input id="username" type="text" class="validate" name="username" required="required">
+                    <label for="username-modal">Usuario</label>
+                    <input id="username-modal" type="text" class="validate" name="username" required="required">
                 </div>
             </div>
 
             <div class="row margin">
                 <span class="col l12">
-                    <label for="password">Contraseña</label>
-                    <input id="password" type="password" class="validate" name="password" required="required">
+                    <label for="password-modal">Contraseña</label>
+                    <input id="password-modal" type="password" class="validate" name="password" required="required">
                 </span>
             </div>
 
