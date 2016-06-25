@@ -44,9 +44,6 @@
         <div class="row">
             <div class="col s12 m4">
                 <div class="icon-block home--block shadow">
-                    <h2 class="center brown-text">
-                        <i class="icon material-icons">flash_on</i>
-                    </h2>
                     <h5 class="center">Mision</h5>
 
                     <p class="light justify">
@@ -59,9 +56,6 @@
 
             <div class="col s12 m4">
                 <div class="icon-block home--block shadow">
-                    <h2 class="center brown-text">
-                        <i class="icon material-icons">group</i>
-                    </h2>
                     <h5 class="center">Vision</h5>
 
                     <p class="light justify">
@@ -74,9 +68,6 @@
 
             <div class="col s12 m4">
                 <div class="icon-block home--block shadow">
-                    <h2 class="center brown-text">
-                        <i class="icon material-icons">settings</i>
-                    </h2>
                     <h5 class="center">Valores</h5>
 
                     <p class="light justify">
