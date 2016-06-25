@@ -2,7 +2,7 @@
     <div class="section account">
         <div class="row">
             <form class="col s12 l8 offset-l2" method="post" action="/controllers/register.php">
-                <h4>Registro</h4>
+                <h4>Registrarse</h4>
                 <p>
                     Si es alumno o docente de la institucion complete el siguiente formulario con sus datos para obtener una cuenta.
                 </p>

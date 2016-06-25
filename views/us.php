@@ -7,9 +7,6 @@
             <div class="container">
                 <br><br>
                 <h1 class="banner--title">Portal para entornos educativos</h1>
-                <div class="row center">
-                    <h5 class="banner--subtitle col s12 light">Nosotros</h5>
-                </div>
                 <br><br>
             </div>
         </div>

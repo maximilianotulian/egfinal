@@ -1,25 +1,74 @@
-<footer class="page-footer teal">
-  <div class="container">
-    <div class="row">
+<?php
 
-      <div class="col l12 s12">
-        <h5 class="white-text">Mapa del sitio</h5>
-        <ul class="footer--list">
-          <li><a class="footer--list-item" href="#!">Inicio</a></li>
-          <li><a class="footer--list-item" href="#!">Noticias</a></li>
-          <li><a class="footer--list-item" href="#!">Sobre Nosotros</a></li>
-          <li><a class="footer--list-item" href="#!">Contacto</a></li>
-          <li><a class="footer--list-item" href="#!">Ingresar</a></li>
-        </ul>
-      </div>
+include_once 'system/utils/UserHelper.php';
+include_once 'system/utils/Permissions.php';
+Use \App\System\Helpers\UserHelper as UserHelper;
+Use \App\System\Helpers\Permissions as Permissions;
 
-    </div>
-  </div>
-  <div class="footer-copyright">
+$loggedUser = UserHelper::getLoggedUser();
+
+?>
+
+<footer class="page-footer footer teal">
     <div class="container">
-      <p class="center">Final Entornos gráficos - Alumnos: Joaquin Diaz, Cristian Ruiz, Maximiliano Tulian.</p>
+        <div class="row">
+
+            <div class="col l12 s12">
+
+                <div class="col l4">
+                    <h5>Inicio</h5>
+                    <ul class="footer--list">
+                        <?php if($loggedUser) { ?>
+                        <li><a class="footer--list-item" href="/subjects">Catedras</a></li>
+                        <?php } ?>
+                        <li><a class="footer--list-item" href="/contact">Contacto</a></li>
+                        <li><a class="footer--list-item" href="/us">Nosotros</a></li>
+                        <li><a class="footer--list-item" href="/news">Noticias</a></li>
+                        <li><a class="footer--list-item" href="/account">Registrar</a></li>
+                        <li><a class="footer--list-item modal-trigger" href="#login-modal">Ingresar</a></li>
+                    </ul>
+                </div>
+                <?php if($loggedUser) {?>
+                <div class="col l4">
+                    <h5>Perfil</h5>
+                    <ul class="footer--list">
+                        <ul>
+                            <li><a class="footer--list-item" href="/profile">Actualizar Perfil</a></li>
+                            <li><a class="footer--list-item" href="/profile/password">Cambiar Contraseña</a></li>
+                            <li><a class="footer--list-item" href="/profile/subjects">Mis Catedras</a></li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <?php if (UserHelper::loggedUserHasPermission(Permissions::ADMIN_ACCESS)){ ?>
+
+                <div class="col l4">
+                    <h5>Administrador</h5>
+                    <ul class="footer--list">
+                        <?php if (UserHelper::loggedUserHasPermission(Permissions::LIST_NEWS)){ ?>
+                            <li><a class="footer--list-item" href="/admin/news">Noticias</a></li>
+                        <?php } ?>
+                        <?php if (UserHelper::loggedUserHasPermission(Permissions::LIST_SUBJECTS)){ ?>
+                        <li><a class="footer--list-item" href="/admin/subjects">Catedras</a></li>
+                        <?php } ?>
+                        <?php if (UserHelper::loggedUserHasPermission(Permissions::LIST_FILES)){ ?>
+                        <li><a class="footer--list-item" href="/admin/files">Archivos</a></li>
+                        <?php } ?>
+                        <?php if (UserHelper::loggedUserHasPermission(Permissions::EDIT_USERS)){ ?>
+                        <li><a class="footer--list-item" href="/admin/users">Usuarios</a></li>
+                        <?php } ?>
+                    </ul>
+                </div>
+                <?php }}?>
+
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <p class="center">Final Entornos gráficos - Alumnos: Joaquin Diaz, Cristian Ruiz, Maximiliano Tulian.</p>
+        </div>
+    </div>
 </footer>
 
 
@@ -34,20 +83,20 @@
 <?php if (isset($_GET['success'])) { ?>
     <?php if($_GET['success'] === 'true') {?>
         <script type="text/javascript">
-            $(document).ready(function(){
-                Materialize.toast('<?php echo $message_success; ?>', 4000);
-            });
+        $(document).ready(function(){
+            Materialize.toast('<?php echo $message_success; ?>', 4000);
+        });
         </script>
-    <?php } else { print_r('asf');?>
+        <?php } else { print_r('asf');?>
         <script type="text/javascript">
-            $(document).ready(function(){
-                Materialize.toast('<?php echo $message_error; ?>', 4000);
-            })
+        $(document).ready(function(){
+            Materialize.toast('<?php echo $message_error; ?>', 4000);
+        })
         </script>
-    <?php } ?>
-<?php } ?>
-<?php if (isset($_GET['bad_login'])) { ?>
-    <script type="text/javascript">
-        $('#login-modal').openModal();
-    </script>
-<?php } ?>
+        <?php } ?>
+        <?php } ?>
+        <?php if (isset($_GET['bad_login'])) { ?>
+            <script type="text/javascript">
+            $('#login-modal').openModal();
+            </script>
+            <?php } ?>
