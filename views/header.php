@@ -51,7 +51,7 @@ $loggedUser = UserHelper::getLoggedUser();
                         </ul>
                     </li>
                 <?php } else {?>
-                    <li><a class="modal-trigger" href="#login-modal">Iniciar sesión / Registrarse</a></li>
+                <li><a class="modal-trigger" href="#login-modal">Iniciar sesión / Registrarse</a></li>
                 <?php } ?>
             </ul>
         </div>
