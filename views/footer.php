@@ -47,7 +47,7 @@ $loggedUser = UserHelper::getLoggedUser();
                         </li>
                         <li>
                             <a class="footer--list-item" href="/account">Registrar</a>
-                            <a class="footer--list-item" href="http://portaleducativo.tigrimigri.com/account">
+                            <a class="footer--list-item" href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fportaleducativo.tigrimigri.com%2Faccount">
                                 - Validación W3C.
                             </a>
                         </li>
