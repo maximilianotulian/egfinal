@@ -11,7 +11,6 @@
                     <h4>Contacto</h4><hr />
                     <?php if (!$success) { ?>
                         <p>
-                            <?php var_dump($success) ?>
                             Si tenés alguna inquietud o consulta escribinos a la siguiente dirección de correo o completá
                             el formulario y nos pondremos en contacto a la brevedad.
                         </p>
