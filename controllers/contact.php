@@ -22,7 +22,7 @@
         ob_end_clean();
 
         if ($mailer->sendEmail()){
-            header('Location: /contact');
+            header('Location: /contact?success=true');
             die();
         } else {
             echo 'Hubo un error al enviar el mail';
