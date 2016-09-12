@@ -491,7 +491,7 @@ html {
   .notice--description {
     background: white;
     border-top: 1px solid #DFDFDF;
-    bottom: 1;
+    bottom: 1px;
     color: #979797;
     display: block;
     font-size: 14px;

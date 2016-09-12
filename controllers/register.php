@@ -2,6 +2,7 @@
 
     include_once  $_SERVER["DOCUMENT_ROOT"].'/system/utils/UserHelper.php';
     include_once $_SERVER["DOCUMENT_ROOT"].'/system/utils/Flags.php';
+    include_once  $_SERVER["DOCUMENT_ROOT"].'/system/utils/Mailer.php';
 
     Use \App\System\Helpers\Flags as Flags;
     Use \App\System\Helpers\UserHelper as UserHelper;
@@ -23,6 +24,12 @@
     $register = UserHelper::createUser($new_user);
 
     if($register['userCreated']){
+        $mailer = new Mailer();
+        $mailer->setFrom("portal.comunicaciones.noreply@gmail.com", "Portal de Comunicaciones");
+        $mailer->setAddress($new_user['email'], $new_user['name']);
+        $mailer->setSubject('Gracias por registrarte!');
+        $mailer->setBody('Tu registro fue exitoso.');
+        $mailer->sendEmail();
         header('Location: /home');
     }else{
         $errors = '?';
