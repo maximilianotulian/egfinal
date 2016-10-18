@@ -4,14 +4,14 @@
             <div class="row margin">
                 <div class="col l12">
                     <label for="username-modal">Usuario</label>
-                    <input id="username-modal" type="text" class="validate" name="username" required="required">
+                    <input id="username-modal" type="text" class="validate" name="username" required="required" maxlength="25">
                 </div>
             </div>
 
             <div class="row margin">
                 <span class="col l12">
                     <label for="password-modal">Contraseña</label>
-                    <input id="password-modal" type="password" class="validate" name="password" required="required">
+                    <input id="password-modal" type="password" class="validate" name="password" required="required" maxlength="25">
                 </span>
             </div>
 

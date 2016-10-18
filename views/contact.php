@@ -13,18 +13,18 @@
 
                 <div class="row">
                     <div class="input-field col s6">
-                        <input id="first_name" required type="text" class="validate" name="name">
+                        <input id="first_name" required type="text" class="validate" name="name" maxlength="25">
                         <label for="first_name">Nombre</label>
                     </div>
                     <div class="input-field col s6">
-                        <input id="last_name" required type="text" class="validate" name="lastname">
+                        <input id="last_name" required type="text" class="validate" name="lastname"  maxlength="25">
                         <label for="last_name">Apellido</label>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="email" required type="email" class="validate" name="email">
+                        <input id="email" required type="email" class="validate" name="email" maxlength="50">
                         <label for="email">Email</label>
                     </div>
                 </div>
